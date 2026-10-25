@@ -107,3 +107,8 @@ footer { margin-top: 48px; border-top: 1px solid var(--line); padding: 22px 0 40
 .sheetbtns { display: flex; flex-wrap: wrap; gap: 10px; padding: 14px 16px 16px; }
 .btn.ghost { background: transparent; border: 1px solid var(--coral); color: var(--coral-2); }
 .btn.ghost:hover { background: rgba(255,90,78,.12); }
+
+#sheetview { position: fixed; inset: 0; z-index: 50; background: rgba(5,8,18,.92); display: flex; align-items: center; justify-content: center; padding: 16px; cursor: zoom-out; }
+#sheetview[hidden] { display: none; }
+#sheetview img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; background: #fff; border-radius: 6px; }
+#sheetview button { position: absolute; top: 12px; right: 16px; width: 44px; height: 44px; border-radius: 50%; border: 0; background: var(--coral); color: #fff; font-size: 26px; line-height: 1; cursor: pointer; }

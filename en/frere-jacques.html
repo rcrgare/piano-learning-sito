@@ -57,5 +57,9 @@
   </main>
 
   <footer><div class="wrap">Arrangement and MIDI: RC Digital (Piano Learning), public domain. Video and app: Piano Learning by RC Digital. Google Play is a trademark of Google LLC.</div></footer>
+  <div id="sheetview" hidden><img alt=""><button type="button" aria-label="×">×</button></div>
+  <script>(function(){var v=document.getElementById("sheetview"),i=v.querySelector("img");
+document.querySelectorAll("[data-sheet]").forEach(function(a){a.addEventListener("click",function(ev){ev.preventDefault();i.src=a.getAttribute("href");v.hidden=false;});});
+v.addEventListener("click",function(){v.hidden=true;});document.addEventListener("keydown",function(ev){if(ev.key==="Escape")v.hidden=true;});})();</script>
 </body>
 </html>
