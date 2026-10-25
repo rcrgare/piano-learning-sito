@@ -136,3 +136,14 @@ h2 small { color: var(--muted); font-size: 14px; font-weight: 500; margin-left: 
 .lv3 { background: #3d1a1a; color: #ff9d94; }
 .tiles a > span:not(.nothumb) { padding-left: 0; padding-right: 0; }
 @media (min-width: 700px) { .finder { position: sticky; } }
+/* language menu in the header */
+.langs { position: relative; }
+.langs summary { list-style: none; cursor: pointer; color: var(--text); font-size: 14px; border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px; white-space: nowrap; }
+.langs summary::-webkit-details-marker { display: none; }
+.langs > div { position: absolute; right: 0; top: calc(100% + 6px); z-index: 20; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 6px; display: grid; grid-template-columns: repeat(2, minmax(120px, 1fr)); gap: 2px; box-shadow: 0 10px 30px rgba(0,0,0,.45); }
+.langs > div a { color: var(--text); text-decoration: none; font-size: 14px; padding: 6px 10px; border-radius: 8px; }
+.langs > div a:hover { background: var(--surface-2); }
+.langs > div a[aria-current] { color: var(--coral-2); font-weight: 700; }
+.top .brand + .langs { margin-left: auto; }
+.top a.all + .langs { margin-left: 4px; }
+[dir="rtl"] .langs > div { right: auto; left: 0; }
