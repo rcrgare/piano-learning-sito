@@ -21,7 +21,11 @@
     "chopin-minute-waltz": "smEmmukTjS4",
     "moonlight-sonata-3rd-movement": "eEjh0Eo8dls",
     "chopin-fantaisie-impromptu": "jLgkyhkjxI0",
-    "chopin-nocturne-e-minor-op-72-no-1": "JhfmJGg_ojo"
+    "chopin-nocturne-e-minor-op-72-no-1": "JhfmJGg_ojo",
+    "chopin-prelude-op-28-no-4-e-minor": "_jGfqjch7dI",
+    "schumann-the-happy-farmer": "IseFsgMK7aQ",
+    "chopin-raindrop-prelude": "HOTQcvg-X04",
+    "schumann-the-wild-rider": "55RR7LY0IMY"
   },
   "dates": {
     "la8dlM7RFRY": "2026-10-25",
@@ -45,7 +49,11 @@
     "smEmmukTjS4": "2026-10-30",
     "eEjh0Eo8dls": "2026-10-30",
     "jLgkyhkjxI0": "2026-10-31",
-    "JhfmJGg_ojo": "2026-10-31"
+    "JhfmJGg_ojo": "2026-10-31",
+    "_jGfqjch7dI": "2026-11-01",
+    "IseFsgMK7aQ": "2026-11-01",
+    "HOTQcvg-X04": "2026-11-02",
+    "55RR7LY0IMY": "2026-11-02"
   },
   "publish": {
     "U9r2RQPHNWE": "2026-10-26T12:00:00+01:00",
@@ -59,6 +67,10 @@
     "smEmmukTjS4": "2026-10-30T12:00:00+01:00",
     "eEjh0Eo8dls": "2026-10-30T18:00:00+01:00",
     "jLgkyhkjxI0": "2026-10-31T12:00:00+01:00",
-    "JhfmJGg_ojo": "2026-10-31T18:00:00+01:00"
+    "JhfmJGg_ojo": "2026-10-31T18:00:00+01:00",
+    "_jGfqjch7dI": "2026-11-01T12:00:00+01:00",
+    "IseFsgMK7aQ": "2026-11-01T18:00:00+01:00",
+    "HOTQcvg-X04": "2026-11-02T12:00:00+01:00",
+    "55RR7LY0IMY": "2026-11-02T18:00:00+01:00"
   }
 }
