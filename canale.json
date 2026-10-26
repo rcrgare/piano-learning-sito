@@ -240,6 +240,23 @@
    "p": "2026-11-03T12:00:00+01:00"
   },
   {
+   "v": "JuDxg5dHBQs",
+   "t": {
+    "it": "Mozart – Sonata facile",
+    "en": "Mozart – Sonata facile K 545",
+    "es": "Mozart – Sonata facile K 545",
+    "fr": "Mozart – Sonata facile K 545",
+    "de": "Mozart – Sonata facile KV 545",
+    "pt": "Mozart – Sonata facile K 545",
+    "ru": "Моцарт – Соната K 545",
+    "ja": "モーツァルト – ソナタ K.545",
+    "zh": "莫扎特 – 奏鸣曲 K. 545",
+    "ko": "모차르트 – 소나타 K. 545"
+   },
+   "k": "c",
+   "p": null
+  },
+  {
    "v": "IVAQDvn8r84",
    "t": {
     "it": "Verdi – Brindisi della Traviata",
@@ -340,6 +357,23 @@
    },
    "k": "c",
    "p": "2026-11-03T18:00:00+01:00"
+  },
+  {
+   "v": "fC1ZHWZ0x8s",
+   "t": {
+    "it": "Debussy – Arabesque n. 2",
+    "en": "Debussy – Arabesque No. 2",
+    "es": "Debussy – Arabesque n.º 2",
+    "fr": "Debussy – Deuxième Arabesque",
+    "de": "Debussy – Arabesque Nr. 2",
+    "pt": "Debussy – Arabesque nº 2",
+    "ru": "Дебюсси – Арабеска № 2",
+    "ja": "ドビュッシー – アラベスク第2番",
+    "zh": "德彪西 – 阿拉伯风格曲 第二号",
+    "ko": "드뷔시 – 아라베스크 2번"
+   },
+   "k": "c",
+   "p": null
   },
   {
    "v": "B9t9ObDIkbE",
