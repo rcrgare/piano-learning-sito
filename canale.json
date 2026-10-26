@@ -257,6 +257,23 @@
    "p": null
   },
   {
+   "v": "sNtqeOQ6seE",
+   "t": {
+    "it": "Chopin – Preludio op. 28 n. 20",
+    "en": "Chopin – Prelude Op. 28 No. 20",
+    "es": "Chopin – Preludio op. 28 n.º 20",
+    "fr": "Chopin – Prélude op. 28 n° 20",
+    "de": "Chopin – Prélude op. 28 Nr. 20",
+    "pt": "Chopin – Prelúdio op. 28 nº 20",
+    "ru": "Шопен – Прелюдия op. 28 № 20",
+    "ja": "ショパン – 前奏曲 作品28-20",
+    "zh": "肖邦 – 前奏曲 Op. 28 No. 20",
+    "ko": "쇼팽 – 전주곡 Op. 28 No. 20"
+   },
+   "k": "c",
+   "p": "2026-11-04T12:00:00+01:00"
+  },
+  {
    "v": "IVAQDvn8r84",
    "t": {
     "it": "Verdi – Brindisi della Traviata",
@@ -510,6 +527,23 @@
    },
    "k": "e",
    "p": "2026-10-28T18:00:00+01:00"
+  },
+  {
+   "v": "cEfspy0UXUo",
+   "t": {
+    "it": "Valzer delle candele",
+    "en": "Auld Lang Syne",
+    "es": "Auld Lang Syne",
+    "fr": "Ce n'est qu'un au revoir",
+    "de": "Auld Lang Syne",
+    "pt": "Auld Lang Syne",
+    "ru": "Auld Lang Syne",
+    "ja": "蛍の光",
+    "zh": "友谊地久天长",
+    "ko": "올드 랭 사인"
+   },
+   "k": "x",
+   "p": "2026-11-04T18:00:00+01:00"
   }
  ]
 }
