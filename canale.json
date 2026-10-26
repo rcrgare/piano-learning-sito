@@ -257,6 +257,40 @@
    "p": null
   },
   {
+   "v": "upuC8Bbg5Wo",
+   "t": {
+    "it": "Beethoven – Patetica – Adagio",
+    "en": "Beethoven – Pathétique Adagio",
+    "es": "Beethoven – Patética – Adagio",
+    "fr": "Beethoven – Pathétique – Adagio",
+    "de": "Beethoven – Pathétique – Adagio",
+    "pt": "Beethoven – Patética – Adagio",
+    "ru": "Бетховен – Патетическая — Adagio",
+    "ja": "ベートーヴェン – 悲愴 第2楽章",
+    "zh": "贝多芬 – 悲怆 第二乐章",
+    "ko": "베토벤 – 비창 2악장"
+   },
+   "k": "c",
+   "p": "2026-11-05T12:00:00+01:00"
+  },
+  {
+   "v": "JJFIHIBJjtI",
+   "t": {
+    "it": "Debussy – Arabesque n. 1",
+    "en": "Debussy – Arabesque No. 1",
+    "es": "Debussy – Arabesque n.º 1",
+    "fr": "Debussy – Première Arabesque",
+    "de": "Debussy – Arabesque Nr. 1",
+    "pt": "Debussy – Arabesque nº 1",
+    "ru": "Дебюсси – Арабеска № 1",
+    "ja": "ドビュッシー – アラベスク第1番",
+    "zh": "德彪西 – 阿拉伯风格曲 第一号",
+    "ko": "드뷔시 – 아라베스크 1번"
+   },
+   "k": "c",
+   "p": "2026-11-06T12:00:00+01:00"
+  },
+  {
    "v": "sNtqeOQ6seE",
    "t": {
     "it": "Chopin – Preludio op. 28 n. 20",
@@ -393,6 +427,23 @@
    "p": null
   },
   {
+   "v": "k9oYoVg_hHU",
+   "t": {
+    "it": "Satie – Gymnopédie n. 3",
+    "en": "Satie – Gymnopédie No. 3",
+    "es": "Satie – Gymnopédie n.º 3",
+    "fr": "Satie – Gymnopédie n° 3",
+    "de": "Satie – Gymnopédie Nr. 3",
+    "pt": "Satie – Gymnopédie nº 3",
+    "ru": "Сати – Гимнопедия № 3",
+    "ja": "サティ – ジムノペディ第3番",
+    "zh": "萨蒂 – 吉诺佩第第三号",
+    "ko": "사티 – 짐노페디 3번"
+   },
+   "k": "c",
+   "p": "2026-11-05T18:00:00+01:00"
+  },
+  {
    "v": "B9t9ObDIkbE",
    "t": {
     "it": "Twinkle Twinkle",
@@ -527,6 +578,23 @@
    },
    "k": "e",
    "p": "2026-10-28T18:00:00+01:00"
+  },
+  {
+   "v": "4BUGNm1WA1I",
+   "t": {
+    "it": "Jingle Bells",
+    "en": "Jingle Bells",
+    "es": "Jingle Bells",
+    "fr": "Jingle Bells",
+    "de": "Jingle Bells",
+    "pt": "Jingle Bells",
+    "ru": "Jingle Bells",
+    "ja": "ジングルベル",
+    "zh": "铃儿响叮当",
+    "ko": "징글벨"
+   },
+   "k": "x",
+   "p": "2026-11-06T18:00:00+01:00"
   },
   {
    "v": "cEfspy0UXUo",
