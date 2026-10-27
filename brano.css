@@ -187,3 +187,6 @@ ul.cfacts li, .cgrid ol.steps li { margin-bottom: 8px; }
 img.mono { object-fit: cover; padding: 0; background: var(--surface-2); }
 .chead img.mono { width: 96px; height: 96px; }
 @media (max-width: 760px) { .chead img.mono { width: 72px; height: 72px; } }
+.midicard { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 18px; }
+.midicard .btn { margin-bottom: 4px; }
+.midicard p.small { margin: 10px 0 0; }
