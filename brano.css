@@ -147,3 +147,40 @@ h2 small { color: var(--muted); font-size: 14px; font-weight: 500; margin-left: 
 .top .brand + .langs { margin-left: auto; }
 .top a.all + .langs { margin-left: 4px; }
 [dir="rtl"] .langs > div { right: auto; left: 0; }
+/* header link to the composers and the composers' pages */
+.top a.nav { color: var(--muted); font-size: 15px; text-decoration: none; white-space: nowrap; }
+.top a.nav:hover, .top a.all:hover { color: var(--text); }
+.top .brand + a.nav { margin-left: auto; }
+.top a.all + a.nav { margin-left: 4px; }
+.top a.nav + .langs { margin-left: 4px; }
+@media (max-width: 480px) {
+  .top .wrap { gap: 8px; }
+  .top a.brand { font-size: 15px; }
+  .top a.all, .top a.nav { font-size: 13.5px; }
+  .top img { display: none; }
+  /* the brand already leads to all the pieces */
+  .top a.all { display: none; }
+  .top a.nav { margin-left: auto; }
+  .langs summary { padding: 4px 9px; }
+}
+.top a.brand, .top a.all { white-space: nowrap; }
+h2 a.who { font-size: 14px; font-weight: 600; margin-left: 10px; text-decoration: none; }
+.mono { flex: none; display: inline-flex; align-items: center; justify-content: center; width: 64px; height: 64px; border-radius: 50%;
+  background: linear-gradient(135deg, #3a2240, #1b2442); border: 1px solid #47304a; color: var(--coral-2); font-weight: 800; font-size: 22px; letter-spacing: .5px; }
+.chead { display: flex; align-items: center; gap: 16px; margin-top: 10px; }
+.chead h1 { margin: 0; }
+.cmeta { margin: 4px 0 0; color: var(--muted); font-size: 15px; }
+.chead + .lead { margin-top: 16px; }
+.cgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 26px 0 8px; }
+.cgrid .card h2 { margin-top: 0; font-size: 20px; }
+ul.cfacts { padding-left: 20px; margin: 0; }
+ul.cfacts li, .cgrid ol.steps li { margin-bottom: 8px; }
+.cgrid ol.steps { margin: 0; }
+.ccards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
+.ccards a { display: flex; gap: 14px; align-items: flex-start; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px; color: var(--text); text-decoration: none; }
+.ccards a:hover { border-color: #47304a; }
+.ccards .mono { width: 52px; height: 52px; font-size: 18px; }
+.ccards b { display: block; font-size: 17px; }
+.ccards .cdates { display: block; color: var(--coral-2); font-size: 13.5px; font-weight: 600; margin: 2px 0 6px; }
+.ccards .clead { display: block; color: var(--muted); font-size: 14.5px; line-height: 1.45; }
+@media (max-width: 760px) { .cgrid { grid-template-columns: 1fr; } .chead .mono { width: 52px; height: 52px; font-size: 18px; } }
