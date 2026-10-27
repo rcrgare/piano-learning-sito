@@ -184,3 +184,6 @@ ul.cfacts li, .cgrid ol.steps li { margin-bottom: 8px; }
 .ccards .cdates { display: block; color: var(--coral-2); font-size: 13.5px; font-weight: 600; margin: 2px 0 6px; }
 .ccards .clead { display: block; color: var(--muted); font-size: 14.5px; line-height: 1.45; }
 @media (max-width: 760px) { .cgrid { grid-template-columns: 1fr; } .chead .mono { width: 52px; height: 52px; font-size: 18px; } }
+img.mono { object-fit: cover; padding: 0; background: var(--surface-2); }
+.chead img.mono { width: 96px; height: 96px; }
+@media (max-width: 760px) { .chead img.mono { width: 72px; height: 72px; } }
