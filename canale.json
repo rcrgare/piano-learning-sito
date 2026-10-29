@@ -342,6 +342,74 @@
    "p": "2026-11-09T12:00:00+01:00"
   },
   {
+   "v": "wbA_Fu4QJSs",
+   "t": {
+    "it": "Strauss – Danubio blu",
+    "en": "Strauss – The Blue Danube",
+    "es": "Strauss – El Danubio azul",
+    "fr": "Strauss – Le Beau Danube bleu",
+    "de": "Strauss – An der schönen blauen Donau",
+    "pt": "Strauss – Danúbio Azul",
+    "ru": "Штраус – Голубой Дунай",
+    "ja": "シュトラウス2世 – 美しく青きドナウ",
+    "zh": "施特劳斯 – 蓝色多瑙河",
+    "ko": "슈트라우스 – 아름답고 푸른 도나우"
+   },
+   "k": "c",
+   "p": "2026-11-10T12:00:00+01:00"
+  },
+  {
+   "v": "lzGfp5sdEeg",
+   "t": {
+    "it": "Preludio di Rachmaninov",
+    "en": "Rachmaninoff Prelude",
+    "es": "Preludio de Rajmáninov",
+    "fr": "Prélude de Rachmaninov",
+    "de": "Rachmaninow-Prélude",
+    "pt": "Prelúdio de Rachmaninoff",
+    "ru": "Прелюдия Рахманинова",
+    "ja": "ラフマニノフ – 前奏曲「鐘」",
+    "zh": "拉赫玛尼诺夫前奏曲",
+    "ko": "라흐마니노프 전주곡"
+   },
+   "k": "c",
+   "p": "2026-11-11T12:00:00+01:00"
+  },
+  {
+   "v": "-KebcBEwwew",
+   "t": {
+    "it": "Schumann – Träumerei",
+    "en": "Schumann – Träumerei",
+    "es": "Schumann – Träumerei",
+    "fr": "Schumann – Träumerei",
+    "de": "Schumann – Träumerei",
+    "pt": "Schumann – Träumerei",
+    "ru": "Шуман – Грёзы",
+    "ja": "シューマン – トロイメライ",
+    "zh": "舒曼 – 梦幻曲",
+    "ko": "슈만 – 트로이메라이"
+   },
+   "k": "c",
+   "p": "2026-11-12T12:00:00+01:00"
+  },
+  {
+   "v": "h1he6A7i9A8",
+   "t": {
+    "it": "Chopin – Preludio op. 28 n. 7",
+    "en": "Chopin – Prelude Op. 28 No. 7",
+    "es": "Chopin – Preludio op. 28 n.º 7",
+    "fr": "Chopin – Prélude op. 28 n° 7",
+    "de": "Chopin – Prélude op. 28 Nr. 7",
+    "pt": "Chopin – Prelúdio op. 28 nº 7",
+    "ru": "Шопен – Прелюдия op. 28 № 7",
+    "ja": "ショパン – 前奏曲 作品28-7",
+    "zh": "肖邦 – 前奏曲 Op. 28 No. 7",
+    "ko": "쇼팽 – 전주곡 Op. 28 No. 7"
+   },
+   "k": "c",
+   "p": "2026-11-13T12:00:00+01:00"
+  },
+  {
    "v": "sNtqeOQ6seE",
    "t": {
     "it": "Chopin – Preludio op. 28 n. 20",
@@ -697,6 +765,74 @@
    },
    "k": "x",
    "p": "2026-11-09T18:00:00+01:00"
+  },
+  {
+   "v": "8zFeEGqHkVg",
+   "t": {
+    "it": "Deck the Halls",
+    "en": "Deck the Halls",
+    "es": "Deck the Halls",
+    "fr": "Deck the Halls",
+    "de": "Deck the Halls",
+    "pt": "Deck the Halls",
+    "ru": "Deck the Halls",
+    "ja": "ひいらぎかざろう",
+    "zh": "装饰大厅",
+    "ko": "덱 더 홀스"
+   },
+   "k": "x",
+   "p": "2026-11-10T18:00:00+01:00"
+  },
+  {
+   "v": "pmi13yCnlJI",
+   "t": {
+    "it": "Joy to the World",
+    "en": "Joy to the World",
+    "es": "Joy to the World",
+    "fr": "Joy to the World",
+    "de": "Joy to the World",
+    "pt": "Joy to the World",
+    "ru": "Joy to the World",
+    "ja": "もろびとこぞりて",
+    "zh": "普世欢腾",
+    "ko": "기쁘다 구주 오셨네"
+   },
+   "k": "x",
+   "p": "2026-11-11T18:00:00+01:00"
+  },
+  {
+   "v": "oPMc85OJ4Go",
+   "t": {
+    "it": "O Tannenbaum",
+    "en": "O Christmas Tree",
+    "es": "O Tannenbaum",
+    "fr": "Mon beau sapin",
+    "de": "O Tannenbaum",
+    "pt": "O Tannenbaum",
+    "ru": "О, ёлочка",
+    "ja": "もみの木",
+    "zh": "圣诞树",
+    "ko": "소나무야"
+   },
+   "k": "x",
+   "p": "2026-11-12T18:00:00+01:00"
+  },
+  {
+   "v": "TUTMwgRUj_U",
+   "t": {
+    "it": "Away in a Manger",
+    "en": "Away in a Manger",
+    "es": "Away in a Manger",
+    "fr": "Away in a Manger",
+    "de": "Away in a Manger",
+    "pt": "Away in a Manger",
+    "ru": "Away in a Manger",
+    "ja": "まぶねのなかに",
+    "zh": "马槽圣婴",
+    "ko": "그 어린 주 예수"
+   },
+   "k": "x",
+   "p": "2026-11-13T18:00:00+01:00"
   },
   {
    "v": "cEfspy0UXUo",

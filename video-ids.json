@@ -41,7 +41,15 @@
   "bach-invention-no-1": "m5EEL5AVYVQ",
   "tu-scendi-dalle-stelle": "tjndxLbH-Ng",
   "burgmuller-arabesque": "Z8qfEAMuTWo",
-  "we-wish-you-a-merry-christmas": "nRalWlMpqFE"
+  "we-wish-you-a-merry-christmas": "nRalWlMpqFE",
+  "blue-danube-waltz-theme": "wbA_Fu4QJSs",
+  "deck-the-halls": "8zFeEGqHkVg",
+  "rachmaninoff-prelude-c-sharp-minor": "lzGfp5sdEeg",
+  "joy-to-the-world": "pmi13yCnlJI",
+  "schumann-traumerei": "-KebcBEwwew",
+  "o-christmas-tree": "oPMc85OJ4Go",
+  "chopin-prelude-op-28-no-7-a-major": "h1he6A7i9A8",
+  "away-in-a-manger": "TUTMwgRUj_U"
  },
  "dates": {
   "la8dlM7RFRY": "2026-10-25",
@@ -105,6 +113,14 @@
   "m5EEL5AVYVQ": "2026-11-08T12:00:00+01:00",
   "tjndxLbH-Ng": "2026-11-08T18:00:00+01:00",
   "Z8qfEAMuTWo": "2026-11-09T12:00:00+01:00",
-  "nRalWlMpqFE": "2026-11-09T18:00:00+01:00"
+  "nRalWlMpqFE": "2026-11-09T18:00:00+01:00",
+  "wbA_Fu4QJSs": "2026-11-10T12:00:00+01:00",
+  "8zFeEGqHkVg": "2026-11-10T18:00:00+01:00",
+  "lzGfp5sdEeg": "2026-11-11T12:00:00+01:00",
+  "pmi13yCnlJI": "2026-11-11T18:00:00+01:00",
+  "-KebcBEwwew": "2026-11-12T12:00:00+01:00",
+  "oPMc85OJ4Go": "2026-11-12T18:00:00+01:00",
+  "h1he6A7i9A8": "2026-11-13T12:00:00+01:00",
+  "TUTMwgRUj_U": "2026-11-13T18:00:00+01:00"
  }
 }
