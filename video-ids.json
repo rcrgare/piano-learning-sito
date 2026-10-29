@@ -35,7 +35,13 @@
   "beethoven-pathetique-adagio-cantabile": "upuC8Bbg5Wo",
   "gymnopedie-no-3": "k9oYoVg_hHU",
   "debussy-arabesque-no-1": "JJFIHIBJjtI",
-  "jingle-bells": "4BUGNm1WA1I"
+  "jingle-bells": "4BUGNm1WA1I",
+  "satie-gnossienne-no-1": "TttydswrgMs",
+  "silent-night": "neQe5zIM5_4",
+  "bach-invention-no-1": "m5EEL5AVYVQ",
+  "tu-scendi-dalle-stelle": "tjndxLbH-Ng",
+  "burgmuller-arabesque": "Z8qfEAMuTWo",
+  "we-wish-you-a-merry-christmas": "nRalWlMpqFE"
  },
  "dates": {
   "la8dlM7RFRY": "2026-10-25",
@@ -93,6 +99,12 @@
   "upuC8Bbg5Wo": "2026-11-05T12:00:00+01:00",
   "k9oYoVg_hHU": "2026-11-05T18:00:00+01:00",
   "JJFIHIBJjtI": "2026-11-06T12:00:00+01:00",
-  "4BUGNm1WA1I": "2026-11-06T18:00:00+01:00"
+  "4BUGNm1WA1I": "2026-11-06T18:00:00+01:00",
+  "TttydswrgMs": "2026-11-07T12:00:00+01:00",
+  "neQe5zIM5_4": "2026-11-07T18:00:00+01:00",
+  "m5EEL5AVYVQ": "2026-11-08T12:00:00+01:00",
+  "tjndxLbH-Ng": "2026-11-08T18:00:00+01:00",
+  "Z8qfEAMuTWo": "2026-11-09T12:00:00+01:00",
+  "nRalWlMpqFE": "2026-11-09T18:00:00+01:00"
  }
 }

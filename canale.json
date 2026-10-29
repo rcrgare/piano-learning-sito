@@ -291,6 +291,57 @@
    "p": "2026-11-06T12:00:00+01:00"
   },
   {
+   "v": "TttydswrgMs",
+   "t": {
+    "it": "Satie – Gnossienne n. 1",
+    "en": "Satie – Gnossienne No. 1",
+    "es": "Satie – Gnossienne n.º 1",
+    "fr": "Satie – Gnossienne n° 1",
+    "de": "Satie – Gnossienne Nr. 1",
+    "pt": "Satie – Gnossienne nº 1",
+    "ru": "Сати – Гносьенна № 1",
+    "ja": "サティ – グノシエンヌ第1番",
+    "zh": "萨蒂 – 格诺西安第一号",
+    "ko": "사티 – 그노시엔느 1번"
+   },
+   "k": "c",
+   "p": "2026-11-07T12:00:00+01:00"
+  },
+  {
+   "v": "m5EEL5AVYVQ",
+   "t": {
+    "it": "Bach – Invenzione n. 1",
+    "en": "Bach – Invention No. 1",
+    "es": "Bach – Invención n.º 1",
+    "fr": "Bach – Invention n° 1",
+    "de": "Bach – Invention Nr. 1",
+    "pt": "Bach – Invenção nº 1",
+    "ru": "Бах – Инвенция № 1",
+    "ja": "バッハ – インヴェンション第1番",
+    "zh": "巴赫 – 创意曲第一号",
+    "ko": "바흐 – 인벤션 1번"
+   },
+   "k": "c",
+   "p": "2026-11-08T12:00:00+01:00"
+  },
+  {
+   "v": "Z8qfEAMuTWo",
+   "t": {
+    "it": "Burgmüller – L'Arabesque",
+    "en": "Burgmüller – Arabesque",
+    "es": "Burgmüller – La arabesca",
+    "fr": "Burgmüller – L'Arabesque",
+    "de": "Burgmüller – Arabeske",
+    "pt": "Burgmüller – Arabesca",
+    "ru": "Бургмюллер – Арабеска",
+    "ja": "ブルグミュラー – アラベスク",
+    "zh": "布格缪勒 – 阿拉伯风格曲",
+    "ko": "부르크뮐러 – 아라베스크"
+   },
+   "k": "c",
+   "p": "2026-11-09T12:00:00+01:00"
+  },
+  {
    "v": "sNtqeOQ6seE",
    "t": {
     "it": "Chopin – Preludio op. 28 n. 20",
@@ -595,6 +646,57 @@
    },
    "k": "x",
    "p": "2026-11-06T18:00:00+01:00"
+  },
+  {
+   "v": "neQe5zIM5_4",
+   "t": {
+    "it": "Astro del ciel",
+    "en": "Silent Night",
+    "es": "Noche de paz",
+    "fr": "Douce nuit",
+    "de": "Stille Nacht",
+    "pt": "Noite Feliz",
+    "ru": "Тихая ночь",
+    "ja": "きよしこの夜",
+    "zh": "平安夜",
+    "ko": "고요한 밤"
+   },
+   "k": "x",
+   "p": "2026-11-07T18:00:00+01:00"
+  },
+  {
+   "v": "tjndxLbH-Ng",
+   "t": {
+    "it": "Tu scendi dalle stelle",
+    "en": "Tu scendi dalle stelle",
+    "es": "Tu scendi dalle stelle",
+    "fr": "Tu scendi dalle stelle",
+    "de": "Tu scendi dalle stelle",
+    "pt": "Tu scendi dalle stelle",
+    "ru": "Tu scendi dalle stelle",
+    "ja": "トゥ・シェンディ・ダッレ・ステッレ",
+    "zh": "你从星空降临",
+    "ko": "투 셴디 달레 스텔레"
+   },
+   "k": "x",
+   "p": "2026-11-08T18:00:00+01:00"
+  },
+  {
+   "v": "nRalWlMpqFE",
+   "t": {
+    "it": "We Wish You a Merry Christmas",
+    "en": "We Wish You a Merry Christmas",
+    "es": "We Wish You a Merry Christmas",
+    "fr": "We Wish You a Merry Christmas",
+    "de": "We Wish You a Merry Christmas",
+    "pt": "We Wish You a Merry Christmas",
+    "ru": "We Wish You a Merry Christmas",
+    "ja": "おめでとうクリスマス",
+    "zh": "我们祝你圣诞快乐",
+    "ko": "위 위시 유 어 메리 크리스마스"
+   },
+   "k": "x",
+   "p": "2026-11-09T18:00:00+01:00"
   },
   {
    "v": "cEfspy0UXUo",
