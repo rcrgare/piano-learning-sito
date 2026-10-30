@@ -49,7 +49,17 @@
   "schumann-traumerei": "-KebcBEwwew",
   "o-christmas-tree": "oPMc85OJ4Go",
   "chopin-prelude-op-28-no-7-a-major": "h1he6A7i9A8",
-  "away-in-a-manger": "TUTMwgRUj_U"
+  "away-in-a-manger": "TUTMwgRUj_U",
+  "moonlight-sonata-2nd-movement": "sEuVo3EVCUo",
+  "minuet-in-g-major": "i78LZdjhMYU",
+  "chopin-waltz-b-minor-op-69-no-2": "-Q7lrl3068I",
+  "beethoven-pathetique-rondo": "QRd01WwCTiI",
+  "chopin-prelude-op-28-no-6": "9gqV_ko6Ins",
+  "chopin-nocturne-op-9-no-1": "R_yKU0JE6ZM",
+  "gymnopedie-no-2": "WGe__SA01FU",
+  "joplin-solace": "BjYKioKV4EI",
+  "schumann-of-foreign-lands-and-peoples": "8zIsNoQM6K8",
+  "burgmuller-ballade": "sw3LBVmPz5s"
  },
  "dates": {
   "la8dlM7RFRY": "2026-10-25",
@@ -121,6 +131,16 @@
   "-KebcBEwwew": "2026-11-12T12:00:00+01:00",
   "oPMc85OJ4Go": "2026-11-12T18:00:00+01:00",
   "h1he6A7i9A8": "2026-11-13T12:00:00+01:00",
-  "TUTMwgRUj_U": "2026-11-13T18:00:00+01:00"
+  "TUTMwgRUj_U": "2026-11-13T18:00:00+01:00",
+  "sEuVo3EVCUo": "2026-11-14T12:00:00+01:00",
+  "i78LZdjhMYU": "2026-11-15T12:00:00+01:00",
+  "-Q7lrl3068I": "2026-11-16T12:00:00+01:00",
+  "QRd01WwCTiI": "2026-11-17T12:00:00+01:00",
+  "9gqV_ko6Ins": "2026-11-17T18:00:00+01:00",
+  "R_yKU0JE6ZM": "2026-11-18T12:00:00+01:00",
+  "WGe__SA01FU": "2026-11-14T18:00:00+01:00",
+  "BjYKioKV4EI": "2026-11-15T18:00:00+01:00",
+  "8zIsNoQM6K8": "2026-11-16T18:00:00+01:00",
+  "sw3LBVmPz5s": "2026-11-18T18:00:00+01:00"
  }
 }
