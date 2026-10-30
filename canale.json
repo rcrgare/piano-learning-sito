@@ -856,14 +856,14 @@
    "t": {
     "it": "Beethoven – Chiaro di luna – 2° mov.",
     "en": "Beethoven – Moonlight 2nd mov.",
-    "es": "Beethoven – Moonlight 2nd mov.",
-    "fr": "Beethoven – Moonlight 2nd mov.",
-    "de": "Beethoven – Moonlight 2nd mov.",
-    "pt": "Beethoven – Moonlight 2nd mov.",
-    "ru": "Beethoven – Moonlight 2nd mov.",
-    "ja": "Beethoven – Moonlight 2nd mov.",
-    "zh": "Beethoven – Moonlight 2nd mov.",
-    "ko": "Beethoven – Moonlight 2nd mov."
+    "es": "Beethoven – Claro de luna – 2.º mov.",
+    "fr": "Beethoven – Clair de lune – 2e mvt",
+    "de": "Beethoven – Mondschein – 2. Satz",
+    "pt": "Beethoven – Ao luar – 2º mov.",
+    "ru": "Бетховен – Лунная — 2-я часть",
+    "ja": "ベートーヴェン – 月光 第2楽章",
+    "zh": "贝多芬 – 月光 第二乐章",
+    "ko": "베토벤 – 월광 2악장"
    },
    "k": "c",
    "p": "2026-11-14T12:00:00+01:00"
@@ -873,14 +873,14 @@
    "t": {
     "it": "Beethoven – Patetica – Rondò",
     "en": "Beethoven – Pathétique Rondo",
-    "es": "Beethoven – Pathétique Rondo",
-    "fr": "Beethoven – Pathétique Rondo",
-    "de": "Beethoven – Pathétique Rondo",
-    "pt": "Beethoven – Pathétique Rondo",
-    "ru": "Beethoven – Pathétique Rondo",
-    "ja": "Beethoven – Pathétique Rondo",
-    "zh": "Beethoven – Pathétique Rondo",
-    "ko": "Beethoven – Pathétique Rondo"
+    "es": "Beethoven – Patética – Rondó",
+    "fr": "Beethoven – Pathétique – Rondo",
+    "de": "Beethoven – Pathétique – Rondo",
+    "pt": "Beethoven – Patética – Rondó",
+    "ru": "Бетховен – Патетическая — Рондо",
+    "ja": "ベートーヴェン – 悲愴 第3楽章",
+    "zh": "贝多芬 – 悲怆 第三乐章",
+    "ko": "베토벤 – 비창 3악장"
    },
    "k": "c",
    "p": "2026-11-17T12:00:00+01:00"
@@ -890,14 +890,14 @@
    "t": {
     "it": "Bach – Minuetto in Sol",
     "en": "Bach – Minuet in G",
-    "es": "Bach – Minuet in G",
-    "fr": "Bach – Minuet in G",
-    "de": "Bach – Minuet in G",
-    "pt": "Bach – Minuet in G",
-    "ru": "Bach – Minuet in G",
-    "ja": "Bach – Minuet in G",
-    "zh": "Bach – Minuet in G",
-    "ko": "Bach – Minuet in G"
+    "es": "Bach – Minueto en Sol",
+    "fr": "Bach – Menuet en sol",
+    "de": "Bach – Menuett in G",
+    "pt": "Bach – Minueto em Sol",
+    "ru": "Бах – Менуэт соль мажор",
+    "ja": "バッハ – メヌエット ト長調",
+    "zh": "巴赫 – G 大调小步舞曲",
+    "ko": "바흐 – 미뉴에트 사장조"
    },
    "k": "c",
    "p": "2026-11-15T12:00:00+01:00"
@@ -907,14 +907,14 @@
    "t": {
     "it": "Chopin – Valzer in Si minore",
     "en": "Chopin – Waltz in B minor",
-    "es": "Chopin – Waltz in B minor",
-    "fr": "Chopin – Waltz in B minor",
-    "de": "Chopin – Waltz in B minor",
-    "pt": "Chopin – Waltz in B minor",
-    "ru": "Chopin – Waltz in B minor",
-    "ja": "Chopin – Waltz in B minor",
-    "zh": "Chopin – Waltz in B minor",
-    "ko": "Chopin – Waltz in B minor"
+    "es": "Chopin – Vals en Si menor",
+    "fr": "Chopin – Valse en si mineur",
+    "de": "Chopin – Walzer in h-Moll",
+    "pt": "Chopin – Valsa em Si menor",
+    "ru": "Шопен – Вальс си минор",
+    "ja": "ショパン – ワルツ ロ短調",
+    "zh": "肖邦 – b 小调圆舞曲",
+    "ko": "쇼팽 – 왈츠 나단조"
    },
    "k": "c",
    "p": "2026-11-16T12:00:00+01:00"
@@ -924,14 +924,14 @@
    "t": {
     "it": "Chopin – Preludio op. 28 n. 6",
     "en": "Chopin – Prelude Op. 28 No. 6",
-    "es": "Chopin – Prelude Op. 28 No. 6",
-    "fr": "Chopin – Prelude Op. 28 No. 6",
-    "de": "Chopin – Prelude Op. 28 No. 6",
-    "pt": "Chopin – Prelude Op. 28 No. 6",
-    "ru": "Chopin – Prelude Op. 28 No. 6",
-    "ja": "Chopin – Prelude Op. 28 No. 6",
-    "zh": "Chopin – Prelude Op. 28 No. 6",
-    "ko": "Chopin – Prelude Op. 28 No. 6"
+    "es": "Chopin – Preludio op. 28 n.º 6",
+    "fr": "Chopin – Prélude op. 28 n° 6",
+    "de": "Chopin – Prélude op. 28 Nr. 6",
+    "pt": "Chopin – Prelúdio op. 28 nº 6",
+    "ru": "Шопен – Прелюдия op. 28 № 6",
+    "ja": "ショパン – 前奏曲 作品28-6",
+    "zh": "肖邦 – 前奏曲 Op. 28 No. 6",
+    "ko": "쇼팽 – 전주곡 Op. 28 No. 6"
    },
    "k": "c",
    "p": "2026-11-17T18:00:00+01:00"
@@ -941,14 +941,14 @@
    "t": {
     "it": "Chopin – Notturno op. 9 n. 1",
     "en": "Chopin – Nocturne Op. 9 No. 1",
-    "es": "Chopin – Nocturne Op. 9 No. 1",
-    "fr": "Chopin – Nocturne Op. 9 No. 1",
-    "de": "Chopin – Nocturne Op. 9 No. 1",
-    "pt": "Chopin – Nocturne Op. 9 No. 1",
-    "ru": "Chopin – Nocturne Op. 9 No. 1",
-    "ja": "Chopin – Nocturne Op. 9 No. 1",
-    "zh": "Chopin – Nocturne Op. 9 No. 1",
-    "ko": "Chopin – Nocturne Op. 9 No. 1"
+    "es": "Chopin – Nocturno op. 9 n.º 1",
+    "fr": "Chopin – Nocturne op. 9 n° 1",
+    "de": "Chopin – Nocturne op. 9 Nr. 1",
+    "pt": "Chopin – Noturno op. 9 nº 1",
+    "ru": "Шопен – Ноктюрн op. 9 № 1",
+    "ja": "ショパン – ノクターン 作品9-1",
+    "zh": "肖邦 – 夜曲 Op. 9 No. 1",
+    "ko": "쇼팽 – 녹턴 Op. 9 No. 1"
    },
    "k": "c",
    "p": "2026-11-18T12:00:00+01:00"
@@ -958,14 +958,14 @@
    "t": {
     "it": "Satie – Gymnopédie n. 2",
     "en": "Satie – Gymnopédie No. 2",
-    "es": "Satie – Gymnopédie No. 2",
-    "fr": "Satie – Gymnopédie No. 2",
-    "de": "Satie – Gymnopédie No. 2",
-    "pt": "Satie – Gymnopédie No. 2",
-    "ru": "Satie – Gymnopédie No. 2",
-    "ja": "Satie – Gymnopédie No. 2",
-    "zh": "Satie – Gymnopédie No. 2",
-    "ko": "Satie – Gymnopédie No. 2"
+    "es": "Satie – Gymnopédie n.º 2",
+    "fr": "Satie – Gymnopédie n° 2",
+    "de": "Satie – Gymnopédie Nr. 2",
+    "pt": "Satie – Gymnopédie nº 2",
+    "ru": "Сати – Гимнопедия № 2",
+    "ja": "サティ – ジムノペディ第2番",
+    "zh": "萨蒂 – 吉诺佩第第二号",
+    "ko": "사티 – 짐노페디 2번"
    },
    "k": "c",
    "p": "2026-11-14T18:00:00+01:00"
@@ -979,10 +979,10 @@
     "fr": "Joplin – Solace",
     "de": "Joplin – Solace",
     "pt": "Joplin – Solace",
-    "ru": "Joplin – Solace",
-    "ja": "Joplin – Solace",
-    "zh": "Joplin – Solace",
-    "ko": "Joplin – Solace"
+    "ru": "Джоплин – Solace",
+    "ja": "ジョプリン – ソラース",
+    "zh": "乔普林 – 慰藉",
+    "ko": "조플린 – 솔라스"
    },
    "k": "c",
    "p": "2026-11-15T18:00:00+01:00"
@@ -992,14 +992,14 @@
    "t": {
     "it": "Schumann – Paesi stranieri",
     "en": "Schumann – Of Foreign Lands",
-    "es": "Schumann – Of Foreign Lands",
-    "fr": "Schumann – Of Foreign Lands",
-    "de": "Schumann – Of Foreign Lands",
-    "pt": "Schumann – Of Foreign Lands",
-    "ru": "Schumann – Of Foreign Lands",
-    "ja": "Schumann – Of Foreign Lands",
-    "zh": "Schumann – Of Foreign Lands",
-    "ko": "Schumann – Of Foreign Lands"
+    "es": "Schumann – De países lejanos",
+    "fr": "Schumann – Gens et pays lointains",
+    "de": "Schumann – Von fremden Ländern",
+    "pt": "Schumann – De países distantes",
+    "ru": "Шуман – О чужих странах",
+    "ja": "シューマン – 見知らぬ国",
+    "zh": "舒曼 – 异国他乡",
+    "ko": "슈만 – 미지의 나라와 사람들"
    },
    "k": "c",
    "p": "2026-11-16T18:00:00+01:00"
@@ -1009,14 +1009,14 @@
    "t": {
     "it": "Burgmüller – Ballade",
     "en": "Burgmüller – Ballade",
-    "es": "Burgmüller – Ballade",
+    "es": "Burgmüller – Balada",
     "fr": "Burgmüller – Ballade",
     "de": "Burgmüller – Ballade",
-    "pt": "Burgmüller – Ballade",
-    "ru": "Burgmüller – Ballade",
-    "ja": "Burgmüller – Ballade",
-    "zh": "Burgmüller – Ballade",
-    "ko": "Burgmüller – Ballade"
+    "pt": "Burgmüller – Balada",
+    "ru": "Бургмюллер – Баллада",
+    "ja": "ブルグミュラー – バラード",
+    "zh": "布格缪勒 – 叙事曲",
+    "ko": "부르크뮐러 – 발라드"
    },
    "k": "c",
    "p": "2026-11-18T18:00:00+01:00"
