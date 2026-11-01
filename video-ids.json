@@ -59,7 +59,13 @@
   "gymnopedie-no-2": "WGe__SA01FU",
   "joplin-solace": "BjYKioKV4EI",
   "schumann-of-foreign-lands-and-peoples": "8zIsNoQM6K8",
-  "burgmuller-ballade": "sw3LBVmPz5s"
+  "burgmuller-ballade": "sw3LBVmPz5s",
+  "mozart-sonata-k331-theme": "2UrKZEi1T7k",
+  "grieg-march-of-the-trolls": "tyg1czVJNAU",
+  "bach-invention-8": "Qa2TQhriT-o",
+  "mendelssohn-venetian-boat-song-op-30-no-6": "IzXW1DTq_wc",
+  "tchaikovsky-old-french-song": "88gm22rt5O4",
+  "mozart-fantasia-d-minor-k397": "TciSRVzkya4"
  },
  "dates": {
   "la8dlM7RFRY": "2026-10-25",
@@ -141,6 +147,12 @@
   "WGe__SA01FU": "2026-11-14T18:00:00+01:00",
   "BjYKioKV4EI": "2026-11-15T18:00:00+01:00",
   "8zIsNoQM6K8": "2026-11-16T18:00:00+01:00",
-  "sw3LBVmPz5s": "2026-11-18T18:00:00+01:00"
+  "sw3LBVmPz5s": "2026-11-18T18:00:00+01:00",
+  "2UrKZEi1T7k": "2026-11-19T12:00:00+01:00",
+  "tyg1czVJNAU": "2026-11-19T18:00:00+01:00",
+  "Qa2TQhriT-o": "2026-11-20T12:00:00+01:00",
+  "IzXW1DTq_wc": "2026-11-20T18:00:00+01:00",
+  "88gm22rt5O4": "2026-11-21T12:00:00+01:00",
+  "TciSRVzkya4": "2026-11-21T18:00:00+01:00"
  }
 }

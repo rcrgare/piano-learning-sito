@@ -1020,6 +1020,108 @@
    },
    "k": "c",
    "p": "2026-11-18T18:00:00+01:00"
+  },
+  {
+   "v": "2UrKZEi1T7k",
+   "t": {
+    "it": "Mozart – Sonata K. 331 – Tema",
+    "en": "Mozart – Sonata K. 331 – Theme",
+    "es": "Mozart – Sonata K. 331 – Tema",
+    "fr": "Mozart – Sonate K. 331 – Thème",
+    "de": "Mozart – Sonate KV 331 – Thema",
+    "pt": "Mozart – Sonata K. 331 – Tema",
+    "ru": "Моцарт – Соната K. 331 – Тема",
+    "ja": "モーツァルト – ソナタ K. 331 – 主題",
+    "zh": "莫扎特 – 奏鸣曲 K. 331 – 主题",
+    "ko": "모차르트 – 소나타 K. 331 – 주제"
+   },
+   "k": "c",
+   "p": "2026-11-19T12:00:00+01:00"
+  },
+  {
+   "v": "tyg1czVJNAU",
+   "t": {
+    "it": "Grieg – Marcia dei troll",
+    "en": "Grieg – March of the Trolls",
+    "es": "Grieg – Marcha de los trols",
+    "fr": "Grieg – Marche des trolls",
+    "de": "Grieg – Zug der Zwerge",
+    "pt": "Grieg – Marcha dos trolls",
+    "ru": "Григ – Шествие троллей",
+    "ja": "グリーグ – トロルの行進",
+    "zh": "格里格 – 山妖进行曲",
+    "ko": "그리그 – 트롤의 행진"
+   },
+   "k": "c",
+   "p": "2026-11-19T18:00:00+01:00"
+  },
+  {
+   "v": "Qa2TQhriT-o",
+   "t": {
+    "it": "Bach – Invenzione n. 8",
+    "en": "Bach – Invention No. 8",
+    "es": "Bach – Invención n.º 8",
+    "fr": "Bach – Invention n° 8",
+    "de": "Bach – Invention Nr. 8",
+    "pt": "Bach – Invenção n.º 8",
+    "ru": "Бах – Инвенция № 8",
+    "ja": "バッハ – インヴェンション第8番",
+    "zh": "巴赫 – 第8首创意曲",
+    "ko": "바흐 – 인벤션 8번"
+   },
+   "k": "c",
+   "p": "2026-11-20T12:00:00+01:00"
+  },
+  {
+   "v": "IzXW1DTq_wc",
+   "t": {
+    "it": "Mendelssohn – Barcarola veneziana",
+    "en": "Mendelssohn – Venetian Boat Song",
+    "es": "Mendelssohn – Canción de góndola veneciana",
+    "fr": "Mendelssohn – Chant du gondolier vénitien",
+    "de": "Bartholdy – Venetianisches Gondellied",
+    "pt": "Mendelssohn – Canção do gondoleiro veneziano",
+    "ru": "Мендельсон – Венецианская песня гондольера",
+    "ja": "メンデルスゾーン – ヴェネツィアの舟歌",
+    "zh": "门德尔松 – 威尼斯船歌",
+    "ko": "멘델스존 – 베네치아의 뱃노래"
+   },
+   "k": "c",
+   "p": "2026-11-20T18:00:00+01:00"
+  },
+  {
+   "v": "88gm22rt5O4",
+   "t": {
+    "it": "Čajkovskij – Antica canzone francese",
+    "en": "Tchaikovsky – Old French Song",
+    "es": "Chaikovski – Antigua canción francesa",
+    "fr": "Tchaïkovski – Vieille chanson française",
+    "de": "Tschaikowski – Altfranzösisches Lied",
+    "pt": "Tchaikovsky – Antiga canção francesa",
+    "ru": "Чайковский – Старинная французская песенка",
+    "ja": "チャイコフスキー – 古いフランスの歌",
+    "zh": "柴可夫斯基 – 古老的法国歌曲",
+    "ko": "차이콥스키 – 옛 프랑스 노래"
+   },
+   "k": "c",
+   "p": "2026-11-21T12:00:00+01:00"
+  },
+  {
+   "v": "TciSRVzkya4",
+   "t": {
+    "it": "Mozart – Fantasia in Re minore",
+    "en": "Mozart – Fantasia in D minor",
+    "es": "Mozart – Fantasía en re menor",
+    "fr": "Mozart – Fantaisie en ré mineur",
+    "de": "Mozart – Fantasie d-Moll",
+    "pt": "Mozart – Fantasia em ré menor",
+    "ru": "Моцарт – Фантазия ре минор",
+    "ja": "モーツァルト – 幻想曲 ニ短調",
+    "zh": "莫扎特 – d小调幻想曲",
+    "ko": "모차르트 – 환상곡 D단조"
+   },
+   "k": "c",
+   "p": "2026-11-21T18:00:00+01:00"
   }
  ]
 }
