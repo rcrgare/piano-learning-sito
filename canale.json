@@ -1122,6 +1122,74 @@
    },
    "k": "c",
    "p": "2026-11-21T18:00:00+01:00"
+  },
+  {
+   "v": "ypa_mucXBv8",
+   "t": {
+    "it": "Bach – Invenzione n. 4",
+    "en": "Bach – Invention No. 4",
+    "es": "Bach – Invención n.º 4",
+    "fr": "Bach – Invention n° 4",
+    "de": "Bach – Invention Nr. 4",
+    "pt": "Bach – Invenção n.º 4",
+    "ru": "Бах – Инвенция № 4",
+    "ja": "バッハ – インヴェンション第4番",
+    "zh": "巴赫 – 第4首创意曲",
+    "ko": "바흐 – 인벤션 4번"
+   },
+   "k": "c",
+   "p": "2026-11-22T12:00:00+01:00"
+  },
+  {
+   "v": "hO6HWwwTlQ0",
+   "t": {
+    "it": "Čajkovskij – Soldatini di legno",
+    "en": "Tchaikovsky – Wooden Soldiers",
+    "es": "Chaikovski – Soldaditos de madera",
+    "fr": "Tchaïkovski – Soldats de bois",
+    "de": "Tschaikowski – Holzsoldaten",
+    "pt": "Tchaikovsky – Soldadinhos de madeira",
+    "ru": "Чайковский – Деревянные солдатики",
+    "ja": "チャイコフスキー – 木の兵隊の行進",
+    "zh": "柴可夫斯基 – 木偶兵进行曲",
+    "ko": "차이콥스키 – 나무 병정의 행진"
+   },
+   "k": "c",
+   "p": "2026-11-22T18:00:00+01:00"
+  },
+  {
+   "v": "E0fySFmuPQA",
+   "t": {
+    "it": "Schumann – Melodia",
+    "en": "Schumann – Melody",
+    "es": "Schumann – Melodía",
+    "fr": "Schumann – Mélodie",
+    "de": "Schumann – Melodie",
+    "pt": "Schumann – Melodia",
+    "ru": "Шуман – Мелодия",
+    "ja": "シューマン – メロディー",
+    "zh": "舒曼 – 旋律",
+    "ko": "슈만 – 멜로디"
+   },
+   "k": "c",
+   "p": "2026-11-23T12:00:00+01:00"
+  },
+  {
+   "v": "Ek8R669iFFI",
+   "t": {
+    "it": "Anonimo – Polacca in Sol minore",
+    "en": "Anonymous – Polonaise in G minor",
+    "es": "Anónimo – Polonesa en sol menor",
+    "fr": "Anonyme – Polonaise en sol mineur",
+    "de": "Anonym – Polonaise in g-Moll",
+    "pt": "Anônimo – Polonesa em sol menor",
+    "ru": "автор – Полонез соль минор",
+    "ja": "作者不詳 – ポロネーズ ト短調",
+    "zh": "佚名 – g小调波洛奈兹",
+    "ko": "미상 – 폴로네즈 G단조"
+   },
+   "k": "c",
+   "p": "2026-11-23T18:00:00+01:00"
   }
  ]
 }
