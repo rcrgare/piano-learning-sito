@@ -1190,6 +1190,74 @@
    },
    "k": "c",
    "p": "2026-11-23T18:00:00+01:00"
+  },
+  {
+   "v": "tvqKj0KObDI",
+   "t": {
+    "it": "Valzer di Brahms",
+    "en": "Brahms Waltz",
+    "es": "Vals de Brahms",
+    "fr": "Valse de Brahms",
+    "de": "Brahms-Walzer",
+    "pt": "Valsa de Brahms",
+    "ru": "Вальс Брамса",
+    "ja": "ブラームスのワルツ",
+    "zh": "勃拉姆斯圆舞曲",
+    "ko": "브람스 왈츠"
+   },
+   "k": "c",
+   "p": "2026-11-24T12:00:00+01:00"
+  },
+  {
+   "v": "Y334pSnziFw",
+   "t": {
+    "it": "Ninna nanna di Brahms",
+    "en": "Brahms' Lullaby",
+    "es": "Canción de cuna de Brahms",
+    "fr": "Berceuse de Brahms",
+    "de": "Wiegenlied von Brahms",
+    "pt": "Canção de ninar de Brahms",
+    "ru": "Колыбельная Брамса",
+    "ja": "ブラームスの子守歌",
+    "zh": "勃拉姆斯摇篮曲",
+    "ko": "브람스의 자장가"
+   },
+   "k": "e",
+   "p": "2026-11-24T18:00:00+01:00"
+  },
+  {
+   "v": "v5QnxAgZ5z4",
+   "t": {
+    "it": "Liszt – Consolazione n. 3",
+    "en": "Liszt – Consolation No. 3",
+    "es": "Liszt – Consolación n.º 3",
+    "fr": "Liszt – Consolation n° 3",
+    "de": "Liszt – Consolation Nr. 3",
+    "pt": "Liszt – Consolação n.º 3",
+    "ru": "Лист – Утешение № 3",
+    "ja": "リスト – コンソレーション第3番",
+    "zh": "李斯特 – 第3首安慰曲",
+    "ko": "리스트 – 위안 3번"
+   },
+   "k": "c",
+   "p": "2026-11-25T12:00:00+01:00"
+  },
+  {
+   "v": "8Xy0bcgB4Dc",
+   "t": {
+    "it": "Hark! The Herald Angels Sing",
+    "en": "Hark! The Herald Angels Sing",
+    "es": "Hark! The Herald Angels Sing",
+    "fr": "Hark! The Herald Angels Sing",
+    "de": "Hark! The Herald Angels Sing",
+    "pt": "Hark! The Herald Angels Sing",
+    "ru": "Hark! The Herald Angels Sing",
+    "ja": "天には栄え",
+    "zh": "听啊，天使高声唱",
+    "ko": "천사 찬송하기를"
+   },
+   "k": "x",
+   "p": "2026-11-25T18:00:00+01:00"
   }
  ]
 }

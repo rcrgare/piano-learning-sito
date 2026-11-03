@@ -69,7 +69,11 @@
   "bach-invention-4": "ypa_mucXBv8",
   "tchaikovsky-march-of-the-wooden-soldiers": "hO6HWwwTlQ0",
   "schumann-melody-op-68-no-1": "E0fySFmuPQA",
-  "polonaise-in-g-minor-anna-magdalena": "Ek8R669iFFI"
+  "polonaise-in-g-minor-anna-magdalena": "Ek8R669iFFI",
+  "brahms-waltz-op-39-no-15": "tvqKj0KObDI",
+  "brahms-lullaby": "Y334pSnziFw",
+  "liszt-consolation-no-3": "v5QnxAgZ5z4",
+  "hark-the-herald-angels-sing": "8Xy0bcgB4Dc"
  },
  "dates": {
   "la8dlM7RFRY": "2026-10-25",
@@ -161,6 +165,10 @@
   "ypa_mucXBv8": "2026-11-22T12:00:00+01:00",
   "hO6HWwwTlQ0": "2026-11-22T18:00:00+01:00",
   "E0fySFmuPQA": "2026-11-23T12:00:00+01:00",
-  "Ek8R669iFFI": "2026-11-23T18:00:00+01:00"
+  "Ek8R669iFFI": "2026-11-23T18:00:00+01:00",
+  "tvqKj0KObDI": "2026-11-24T12:00:00+01:00",
+  "Y334pSnziFw": "2026-11-24T18:00:00+01:00",
+  "v5QnxAgZ5z4": "2026-11-25T12:00:00+01:00",
+  "8Xy0bcgB4Dc": "2026-11-25T18:00:00+01:00"
  }
 }
