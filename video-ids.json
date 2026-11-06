@@ -73,7 +73,17 @@
   "brahms-waltz-op-39-no-15": "tvqKj0KObDI",
   "brahms-lullaby": "Y334pSnziFw",
   "liszt-consolation-no-3": "v5QnxAgZ5z4",
-  "hark-the-herald-angels-sing": "8Xy0bcgB4Dc"
+  "hark-the-herald-angels-sing": "8Xy0bcgB4Dc",
+  "chopin-revolutionary-etude": "sqAWAIBIELc",
+  "carol-of-the-bells": "10Y531TevpQ",
+  "beethoven-symphony-no-5-piano": "fEHi3ce4ERw",
+  "o-holy-night": "L5AvA-i3glU",
+  "beethoven-pathetique-1st-movement": "GZdqDPB3vM8",
+  "dance-of-the-sugar-plum-fairy": "yxv6KmTCa94",
+  "chopin-ballade-no-1": "_nPPHXmZxYg",
+  "the-first-noel": "2fHDACpUjdc",
+  "o-come-all-ye-faithful": "vnsk9_gCIOQ",
+  "god-rest-ye-merry-gentlemen": "AtDQtAt0Ifo"
  },
  "dates": {
   "la8dlM7RFRY": "2026-10-25",
@@ -169,6 +179,16 @@
   "tvqKj0KObDI": "2026-11-24T12:00:00+01:00",
   "Y334pSnziFw": "2026-11-24T18:00:00+01:00",
   "v5QnxAgZ5z4": "2026-11-25T12:00:00+01:00",
-  "8Xy0bcgB4Dc": "2026-11-25T18:00:00+01:00"
+  "8Xy0bcgB4Dc": "2026-11-25T18:00:00+01:00",
+  "sqAWAIBIELc": "2026-11-26T12:00:00+01:00",
+  "10Y531TevpQ": "2026-11-26T18:00:00+01:00",
+  "fEHi3ce4ERw": "2026-11-27T12:00:00+01:00",
+  "L5AvA-i3glU": "2026-11-27T18:00:00+01:00",
+  "GZdqDPB3vM8": "2026-11-28T12:00:00+01:00",
+  "yxv6KmTCa94": "2026-11-28T18:00:00+01:00",
+  "_nPPHXmZxYg": "2026-11-29T12:00:00+01:00",
+  "2fHDACpUjdc": "2026-11-29T18:00:00+01:00",
+  "vnsk9_gCIOQ": "2026-11-30T12:00:00+01:00",
+  "AtDQtAt0Ifo": "2026-11-30T18:00:00+01:00"
  }
 }
