@@ -470,3 +470,47 @@ body:has(.buybar) footer { padding-bottom: 104px; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .rv { opacity: 1; transform: none; }
 }
+
+/* libri cartacei su Amazon (libri.py): riquadro in prima pagina e pagina «Libri» */
+.bookpromo { display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: clamp(20px, 4vw, 40px); align-items: center; margin: 18px 0 8px;
+  padding: clamp(20px, 3.4vw, 34px); border-radius: 22px; border: 1px solid rgba(243, 194, 83, .45); box-shadow: var(--shadow);
+  background: radial-gradient(70% 120% at 0% 50%, rgba(243, 194, 83, .16), transparent 60%), linear-gradient(150deg, #142a45, #0d1733 70%); }
+.bp-cover, .bk-cover { display: block; perspective: 900px; }
+.bp-cover img, .bk-cover img { display: block; width: 100%; height: auto; border-radius: 3px 8px 8px 3px; border-left: 5px solid #0a1a2c;
+  box-shadow: 0 28px 44px -18px rgba(0, 0, 0, .95), 0 0 0 1px rgba(243, 194, 83, .25); transform: rotateY(-8deg) rotate(-1deg); transition: transform .35s ease; }
+.bp-cover:hover img { transform: none; }
+.bookpromo h2, .book h2 { margin: 0; font-size: clamp(25px, 3.4vw, 32px); }
+.bp-sub { margin: 2px 0 12px !important; font-family: var(--serif); font-style: italic; font-size: 18px; color: #f3e7c9 !important; }
+.bp-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 12px !important; }
+.bookpromo p, .book p { margin: 0 0 12px; color: #c3cae3; }
+.bookpromo .btns, .book .btns { margin-top: 16px; }
+.stores { margin: 14px 0 0 !important; font-size: 13.5px; color: var(--muted) !important; line-height: 1.7; }
+.stores a { color: var(--gold-2); text-decoration: none; white-space: nowrap; }
+.stores a:hover { color: #fff; text-decoration: underline; }
+.bhero { grid-template-columns: 1fr; }
+.book { display: grid; grid-template-columns: 290px minmax(0, 1fr); gap: clamp(22px, 4.5vw, 48px); align-items: start; margin-top: 30px; scroll-margin-top: 90px;
+  padding: clamp(20px, 3.6vw, 36px); border-radius: 22px; border: 1px solid rgba(243, 194, 83, .4);
+  background: radial-gradient(70% 90% at 0% 0%, rgba(243, 194, 83, .13), transparent 60%), linear-gradient(160deg, #142a45, #0d1733 70%); }
+.book:target { outline: 3px solid var(--gold); outline-offset: 3px; }
+.bk-feats { list-style: none; margin: 4px 0 14px; padding: 0; }
+.bk-feats li { position: relative; padding-left: 26px; margin: 6px 0; }
+.bk-feats li::before { content: ""; position: absolute; left: 2px; top: .45em; width: 12px; height: 7px; border-left: 2.5px solid #86efac; border-bottom: 2.5px solid #86efac; transform: rotate(-45deg); }
+.bk-who { font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--gold) !important; }
+.bk-samples { grid-template-columns: repeat(2, minmax(0, 330px)); gap: 26px; }
+.bk-samples .sample img { aspect-ratio: auto; object-fit: contain; }
+.bk-pdf { display: flex; align-items: center; justify-content: space-between; gap: 18px; flex-wrap: wrap; margin-top: 46px; padding: 22px 26px; border-radius: 18px; background: var(--surface); border: 1px solid var(--line); }
+.bk-pdf h2 { margin: 0 0 4px; font-size: 22px; }
+.bk-pdf p { margin: 0; color: var(--muted); }
+@media (max-width: 760px) {
+  .bookpromo { grid-template-columns: 112px minmax(0, 1fr); align-items: start; gap: 18px; padding: 18px; }
+  .bookpromo h2 { font-size: 22px; }
+  .bp-sub { font-size: 15.5px; }
+  .bookpromo .btns { flex-direction: column; align-items: stretch; }
+  .book { grid-template-columns: 1fr; }
+  .bk-cover { max-width: 220px; margin: 0 auto; }
+  .bk-samples { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+}
+@media (max-width: 480px) {
+  .bookpromo { grid-template-columns: 1fr; }
+  .bp-cover { max-width: 170px; margin: 0 auto; }
+}
