@@ -559,3 +559,132 @@ body:has(.buybar) footer { padding-bottom: 104px; }
 .formats a.fmt { display: inline-block; padding: 5px 14px; border-radius: 999px; border: 1px solid #b8944a; color: var(--navy, #142338) !important;
   text-decoration: none; font-weight: 600; background: rgba(255, 255, 255, .55); transition: background .15s, border-color .15s; }
 .formats a.fmt:hover { background: #fff; border-color: var(--navy, #142338); }
+
+/* voci della barra in alto in un gruppo (make-site.py: top_nav) */
+.tnav { display: flex; align-items: center; gap: 16px; }
+@media (min-width: 761px) and (max-width: 1000px) { .tnav { gap: 12px; } }
+@media (max-width: 760px) {
+  /* telefono: una riga sola sotto nome e lingua, che scorre di lato se le voci non ci stanno */
+  .top .wrap::after { display: none; }
+  .tnav { order: 4; flex: 0 0 auto; width: calc(100% + 32px); margin: -6px -16px -8px; padding: 6px 16px 8px; gap: 8px;
+    overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  .tnav::-webkit-scrollbar { display: none; }
+  .tnav a.nav { flex: none !important; }
+  .tnav a.nav:not(.books):not([href$="-pdf.html"]) { padding: 6px 12px; border: 1px solid var(--line-2); border-radius: 999px; opacity: 1; }
+}
+
+/* fascia dell'app sotto la barra in alto (vetrina.app_strip) */
+.appstrip { border-bottom: 1px solid var(--line); background: linear-gradient(90deg, rgba(255, 90, 78, .13), rgba(76, 166, 255, .09)); }
+.appstrip .wrap { display: flex; align-items: center; gap: 10px; padding-top: 7px; padding-bottom: 7px; }
+.appstrip img { width: 28px; height: 28px; border-radius: 7px; flex: none; }
+.appstrip p { margin: 0 auto 0 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 8px; font-size: 14px; line-height: 1.25; min-width: 0; }
+.appstrip p span { color: var(--muted); font-size: 13px; }
+.as-btn { display: inline-block; font-size: 13px; font-weight: 700; padding: 6px 13px; border-radius: 999px; text-decoration: none; white-space: nowrap; text-align: center;
+  border: 1px solid transparent; transition: filter .15s, background .15s; }
+.as-btn.play { background: linear-gradient(180deg, #ff6b5f, var(--coral)); color: #fff; }
+.as-btn.fire { border-color: rgba(255, 129, 117, .6); color: var(--coral-2); }
+.as-btn:hover { filter: brightness(1.08); color: #fff; }
+.as-btn.fire:hover { background: rgba(255, 90, 78, .12); color: var(--coral-2); }
+@media (max-width: 480px) {
+  .appstrip p { flex-direction: column; align-items: flex-start; font-size: 13px; }
+  .appstrip p span { font-size: 12px; }
+  .as-btn { font-size: 12.5px; padding: 6px 10px; }
+}
+
+/* home: prima schermata (vetrina.home_top) */
+.vetrina { display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr); gap: 22px; align-items: stretch; margin: 24px 0 8px; }
+.v-main { display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+.vetrina h1 { margin: 0; font-size: clamp(26px, 3.4vw, 42px); line-height: 1.1; text-wrap: balance; }
+.v-lead { margin: 0; color: var(--muted); font-size: clamp(15.5px, 1.6vw, 18px); line-height: 1.45; }
+.vapp { display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 16px; border: 1px solid rgba(255, 129, 117, .35);
+  background: radial-gradient(80% 140% at 0% 0%, rgba(255, 90, 78, .2), transparent 60%), var(--surface); }
+.vapp img { width: 48px; height: 48px; border-radius: 12px; flex: none; box-shadow: 0 6px 14px rgba(0, 0, 0, .4); }
+.vapp p { margin: 0 auto 0 0; min-width: 0; }
+.vapp p b { display: block; font-size: 16px; }
+.vapp p span { display: block; color: var(--muted); font-size: 13.5px; }
+.vapp-b { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+.vtiles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.vtiles.n3 .vt:last-child { grid-column: span 2; }
+.vt { display: grid; grid-template-columns: 40px minmax(0, 1fr); column-gap: 11px; align-items: center; padding: 12px 13px; border-radius: 14px;
+  background: var(--surface); border: 1px solid var(--line); color: var(--text); text-decoration: none; transition: transform .15s, border-color .15s, background .15s; }
+.vt:hover { color: var(--text); transform: translateY(-2px); border-color: var(--line-2); background: var(--surface-2); }
+.vt i { grid-row: span 2; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 11px; font-style: normal;
+  background: rgba(255, 90, 78, .14); color: var(--coral-2); }
+.vt svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.vt b { font-size: 15.5px; line-height: 1.2; }
+.vt span { color: var(--muted); font-size: 13px; line-height: 1.3; }
+.vt-pdf i { background: rgba(243, 194, 83, .16); color: var(--gold-2); }
+.vt-books i { background: #f6f1e6; color: #142338; }
+.vt-composers i { background: rgba(76, 166, 255, .15); color: #8cc6ff; }
+/* scheda in vetrina: libro (avorio) o, nelle lingue senza libri, la collana PDF */
+.vfeat { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 20px; align-items: center; padding: 24px; margin: 0; }
+.vf-book { display: block; max-width: 240px; width: 100%; justify-self: center; }
+.vf-book:hover .book3d { transform: translateY(-5px) rotate(-.6deg); }
+.vfeat h2 { margin: 0; font-size: clamp(22px, 2.3vw, 30px); line-height: 1.1; }
+.vfeat h2 a { color: inherit !important; text-decoration: none; }
+.vfeat .ikicker { margin-bottom: 8px; }
+.vfeat .bp-sub { font-size: 16px; }
+.vfeat blockquote { margin: 12px 0 0; font-size: 17px; }
+.vfeat .btns { margin-top: 16px; }
+.vfeat .btn { padding: 11px 18px; font-size: 15px; }
+.vf-fmt { margin: 12px 0 0 !important; font-size: 13.5px; }
+.vf-fmt a { font-weight: 700; }
+.vfeat-pdf { grid-template-columns: 1fr; align-content: start; padding: 0; overflow: hidden; border-radius: 22px; border: 1px solid rgba(243, 194, 83, .4);
+  background: radial-gradient(90% 130% at 100% 0%, rgba(243, 194, 83, .18), transparent 60%), linear-gradient(150deg, #1c2152, #10173a 70%); }
+.vfeat-pdf .vf-img img { display: block; width: 100%; height: auto; }
+.vfeat-pdf .vf-t { padding: 4px 22px 22px; }
+.vfeat-pdf h2 a { color: var(--text) !important; }
+.vfeat-pdf p { color: #c3cae3; margin: 10px 0 0; font-size: 15px; }
+.vfeat-pdf .pricerow { margin: 12px 0 0 !important; }
+.listh { margin: 40px 0 4px; font-size: clamp(22px, 2.8vw, 30px); }
+@media (max-width: 900px) {
+  .vetrina { grid-template-columns: 1fr; }
+  .vfeat { grid-template-columns: 200px minmax(0, 1fr); }
+}
+@media (max-width: 760px) {
+  .vetrina { gap: 12px; margin-top: 14px; }
+  .v-main { gap: 12px; }
+  .vetrina h1 { font-size: 25px; }
+  .v-lead { font-size: 15px; }
+  .vapp { padding: 10px 12px; gap: 10px; }
+  .vapp img { width: 40px; height: 40px; border-radius: 10px; }
+  .vapp p b { font-size: 15px; }
+  .vapp p span { font-size: 12.5px; }
+  .vapp-b { flex-direction: column; gap: 6px; }
+  .vapp-b .as-btn { padding: 6px 11px; }
+  .vtiles { gap: 8px; }
+  .vt { padding: 10px; column-gap: 9px; grid-template-columns: 34px minmax(0, 1fr); }
+  .vt i { width: 34px; height: 34px; border-radius: 9px; }
+  .vt svg { width: 19px; height: 19px; }
+  .vt b { font-size: 14.5px; }
+  .vt span { font-size: 12px; }
+  .vfeat { grid-template-columns: 104px minmax(0, 1fr); gap: 14px; padding: 16px; border-radius: 20px; align-items: start; }
+  .vfeat h2 { font-size: 20px; }
+  .vfeat .ikicker { font-size: 10.5px; letter-spacing: .12em; margin-bottom: 6px; }
+  .vfeat .bp-sub { font-size: 14px; }
+  .vfeat blockquote, .vfeat .btn.quiet { display: none; }
+  .vfeat .btns { margin-top: 12px; flex-direction: row; }
+  .vfeat .btn.ink { padding: 9px 14px; font-size: 14px; flex: 1 1 auto; }
+  .vf-fmt { font-size: 12.5px; margin-top: 8px !important; }
+  .vfeat-pdf { grid-template-columns: 1fr; padding: 0; }
+  .vfeat-pdf .vf-t { padding: 2px 16px 16px; }
+  .listh { margin-top: 30px; }
+}
+@media (max-width: 480px) {
+  /* le quattro voci stanno su una riga anche a 360 px; in tedesco e portoghese la riga scorre */
+  .top .wrap { padding-top: 8px; padding-bottom: 8px; row-gap: 8px; }
+  .tnav { gap: 6px; }
+  .tnav a.nav { font-size: 13px; padding: 5px 10px !important; }
+  .tnav a.nav[href$="-pdf.html"]::before, .tnav a.nav.books::before { display: none; }
+}
+.tnav.more { -webkit-mask-image: linear-gradient(90deg, #000 82%, transparent); mask-image: linear-gradient(90deg, #000 82%, transparent); }
+@media (min-width: 901px) {
+  /* computer: la scheda in vetrina larga quanto la colonna a sinistra, con il libro più grande */
+  .vetrina { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 26px; }
+  .vfeat { grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); padding: 28px 30px; }
+  .vf-book { max-width: 260px; }
+}
+@media (max-width: 480px) {
+  /* telefono: la frase sotto il titolo la dicono già l'app e i riquadri; così la vetrina sta nel primo schermo */
+  .v-lead { display: none; }
+}

@@ -2,6 +2,13 @@
    Senza questo file il sito funziona uguale: niente resta nascosto. */
 (function () {
   var d = document;
+  // menu in alto sul telefono: sfumatura a destra finché ci sono voci da far scorrere
+  d.querySelectorAll(".tnav").forEach(function (n) {
+    var f = function () { n.classList.toggle("more", n.scrollLeft + n.clientWidth < n.scrollWidth - 4); };
+    f();
+    n.addEventListener("scroll", f, { passive: true });
+    window.addEventListener("resize", f);
+  });
   if (!("IntersectionObserver" in window)) return;
   if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     var limit = window.innerHeight * 0.92;
