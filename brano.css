@@ -688,3 +688,134 @@ body:has(.buybar) footer { padding-bottom: 104px; }
   /* telefono: la frase sotto il titolo la dicono già l'app e i riquadri; così la vetrina sta nel primo schermo */
   .v-lead { display: none; }
 }
+
+/* telefono: le quattro voci del menu stanno su una riga anche in inglese (meno margine a sinistra, pulsanti più stretti) */
+@media (max-width: 480px) {
+  .tnav { width: calc(100% + 20px); margin: -6px -10px -8px; padding: 6px 10px 8px; gap: 5px; }
+  .tnav a.nav { font-size: 12.5px; padding: 5px 8px !important; }
+}
+
+/* testata breve delle pagine Libri e Spartiti PDF */
+.bhead.slim { margin: 24px 0 16px; }
+.bhead.slim h1 { margin: 2px 0 6px; font-size: clamp(26px, 3.4vw, 40px); line-height: 1.1; }
+.bhead.slim .lead { margin: 0; font-size: clamp(15px, 1.6vw, 17.5px); }
+
+/* pagina Libri: libro in vetrina più grande, riquadri dei libri, interno di ogni libro */
+.vbig { margin: 0 0 8px; }
+@media (min-width: 901px) {
+  .vbig { grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); padding: 36px 44px; gap: 40px; }
+  .vbig .vf-book { max-width: 330px; }
+  .vbig h2 { font-size: clamp(32px, 3.4vw, 44px); }
+  .vbig .bp-sub { font-size: 19px; }
+  .vbig blockquote { font-size: 21px; }
+}
+.bgrid { margin: 34px 0 0; }
+.bgrid h2 { margin: 0 0 14px; font-size: clamp(21px, 2.6vw, 26px); }
+.bgrid > div { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 14px; }
+.bcard { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 14px; align-items: center; padding: 14px; border-radius: 16px;
+  background: var(--surface); border: 1px solid var(--line); color: var(--text); text-decoration: none; transition: border-color .15s, transform .15s; }
+.bcard:hover { color: var(--text); border-color: #b8944a; transform: translateY(-2px); }
+.bcard .book3d { filter: drop-shadow(0 10px 14px rgba(0, 0, 0, .5)); }
+.bcard b { display: block; font-family: var(--serif); font-size: 18px; line-height: 1.2; }
+.bcard b small { font-size: .78em; font-style: italic; font-weight: 400; color: var(--gold); }
+.bcard em { display: block; color: var(--muted); font-size: 14px; margin-top: 3px; }
+.bcard > span > small { display: block; margin-top: 6px; font-size: 12.5px; color: var(--gold); letter-spacing: .02em; }
+.bdet { margin-top: 38px; padding-top: 26px; border-top: 1px solid var(--line); scroll-margin-top: 80px; }
+.bd-h { margin: 0 0 10px; font-size: clamp(22px, 2.8vw, 28px); }
+.bd-h small { display: block; font-size: .62em; font-style: italic; font-weight: 400; color: var(--gold); margin-top: 2px; }
+.bd-top { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 22px; align-items: center; margin-bottom: 14px; }
+.bd-top h2 { margin: 0; font-size: clamp(24px, 3vw, 32px); line-height: 1.12; }
+.bd-top h2 small { font-family: var(--serif); font-size: .6em; font-style: italic; font-weight: 400; color: var(--gold); }
+.bdet .bp-sub { color: var(--muted) !important; }
+.bd-top .btns { margin-top: 14px; }
+.bd-lead { color: var(--muted); max-width: 46em; margin: 0; }
+.bdet .spread { margin-top: 20px; }
+.bd-more { margin-top: 18px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); }
+.bd-more > :not(summary) { margin-left: 16px; margin-right: 16px; }
+.bd-more .bk-feats { border-top-color: var(--line); margin-top: 0; }
+.bd-more .bk-feats li { border-bottom-color: var(--line); }
+.bd-more .bk-feats b { color: var(--text); }
+.bd-more .bk-feats span { color: var(--muted); }
+.bd-more .bk-who { color: var(--gold) !important; }
+.bd-more .specs { background: var(--bg-2); border-color: var(--line); margin-bottom: 4px; }
+.bd-more .specs div { border-color: var(--line); }
+.bd-more .specs dt { color: var(--gold); }
+.bd-more .specs dd { color: var(--text); }
+.bd-more .stores { color: var(--muted) !important; margin: 12px 16px 16px !important; }
+.bd-more .stores a { color: var(--gold-2); }
+@media (max-width: 760px) {
+  .bhead.slim { margin: 16px 0 12px; }
+  .bhead.slim h1 { font-size: 24px; }
+  .bhead.slim .lead { font-size: 14.5px; }
+  .bgrid { margin-top: 26px; }
+  .bgrid > div { grid-template-columns: 1fr; gap: 10px; }
+  .bcard { grid-template-columns: 74px minmax(0, 1fr); padding: 12px; gap: 12px; }
+  .bcard b { font-size: 16.5px; }
+  .bdet { margin-top: 28px; padding-top: 20px; }
+  .bd-top { grid-template-columns: 96px minmax(0, 1fr); gap: 14px; align-items: start; }
+  .bd-top h2 { font-size: 21px; }
+  .bd-top .btns { flex-direction: row; }
+  .bd-top .btn.ink { padding: 9px 14px; font-size: 14px; }
+  .bd-top .formats { font-size: 12.5px; gap: 6px; }
+  .bd-top .formats a.fmt { padding: 4px 10px; }
+  .bd-lead { font-size: 15px; }
+}
+
+/* pagina Spartiti PDF: collana completa in vetrina e copertine dei volumi */
+.pfeat { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); align-items: center; border-radius: 24px; overflow: hidden;
+  border: 1px solid rgba(243, 194, 83, .4); box-shadow: var(--shadow);
+  background: radial-gradient(90% 130% at 100% 0%, rgba(243, 194, 83, .18), transparent 60%), linear-gradient(150deg, #1c2152, #10173a 70%); }
+.pf-img { display: block; align-self: stretch; background: #0e1432; }
+.pf-img img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: left center; }
+.pf-t { padding: clamp(20px, 3vw, 32px); }
+.pf-t h2 { margin: 10px 0 6px; font-size: clamp(24px, 3vw, 32px); }
+.pf-t p { margin: 0 0 10px; color: #c3cae3; }
+.pf-t small { display: block; color: var(--muted); font-size: 13.5px; }
+.pf-t .btns { margin-top: 16px; }
+.pf-t .trust { margin-top: 14px; }
+.vgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(168px, 1fr)); gap: 14px; }
+.vtile { position: relative; display: flex; flex-direction: column; gap: 3px; padding: 10px 10px 12px; border-radius: 14px; scroll-margin-top: 80px;
+  background: var(--surface); border: 1px solid var(--line); border-top: 3px solid var(--acc, var(--coral)); }
+.vtile img { display: block; width: 100%; height: auto; border-radius: 6px; margin-bottom: 6px; box-shadow: 0 10px 20px -10px rgba(0, 0, 0, .8); }
+.vt-new { position: absolute; top: 4px; left: 4px; z-index: 1; font-size: 11px; }
+.vt-n { font-size: 11.5px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.vtile b { font-size: 15px; line-height: 1.25; }
+.vtile small { color: var(--muted); font-size: 12.5px; }
+.vt-buy { margin-top: auto; padding-top: 8px; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.vt-buy .price { font-weight: 800; font-size: 16px; }
+.vt-buy .btn { padding: 7px 13px; font-size: 13.5px; }
+@media (max-width: 760px) {
+  .pfeat { grid-template-columns: 1fr; border-radius: 20px; }
+  .pf-t { padding: 14px 16px 18px; }
+  .pf-t h2 { font-size: 22px; margin-top: 8px; }
+  .pf-t p { font-size: 14.5px; }
+  .pf-t .pricerow b { font-size: 30px; }
+  .pf-t .btn.line { display: none; }   /* i volumi sono subito sotto */
+  .pf-t .trust { margin-top: 10px; }
+}
+@media (max-width: 480px) {
+  .vgrid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+  .vtile { padding: 6px 6px 8px; border-radius: 10px; }
+  .vtile img { margin-bottom: 4px; border-radius: 4px; }
+  .vt-new { font-size: 9.5px; padding: 2px 6px; }
+  .vt-n { font-size: 9.5px; letter-spacing: .06em; }
+  .vtile b { font-size: 12.5px; }
+  .vtile small { display: none; }
+  .vt-buy { flex-direction: column; align-items: stretch; gap: 4px; padding-top: 6px; text-align: center; }
+  .vt-buy .price { font-size: 13.5px; }
+  .vt-buy .btn { padding: 6px 4px; font-size: 12px; }
+}
+
+/* ritocchi della pagina Libri sul fondo scuro */
+.bd-h small small { display: inline; font-size: .8em; margin: 0; }
+.bd-top .btn.ink { background: #f6f1e6; color: #142338; border-color: #d9c79c; }
+.bd-top .btn.ink:hover { background: #fff; color: #142338; }
+.bdet .formats { color: var(--muted) !important; }
+.bdet .formats a.fmt { background: rgba(246, 241, 230, .92); }
+
+/* riquadri «Cosa trovi in ogni volume»: le parole lunghe (Komponistenbiografien) vanno a capo invece di sbordare */
+.feat4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.feat4 b { overflow-wrap: break-word; -webkit-hyphens: auto; hyphens: auto; }
+@media (max-width: 900px) { .feat4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+/* menu del telefono: un pixel in meno tra le voci, così anche in inglese stanno tutte e quattro */
+@media (max-width: 480px) { .tnav { gap: 4px; } }
