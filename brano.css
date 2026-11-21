@@ -553,3 +553,9 @@ body:has(.buybar) footer { padding-bottom: 104px; }
   .bookpromo .btns, .book .btns { flex-direction: column; align-items: stretch; }
   .btn.quiet { padding: 8px; }
 }
+/* altri formati dello stesso libro (brossura, Kindle) sotto il pulsante principale */
+.formats { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; margin: 14px 0 0 !important; font-size: 14px; color: var(--ink2, #3b4257) !important; }
+.formats span { font-weight: 600; }
+.formats a.fmt { display: inline-block; padding: 5px 14px; border-radius: 999px; border: 1px solid #b8944a; color: var(--navy, #142338) !important;
+  text-decoration: none; font-weight: 600; background: rgba(255, 255, 255, .55); transition: background .15s, border-color .15s; }
+.formats a.fmt:hover { background: #fff; border-color: var(--navy, #142338); }
