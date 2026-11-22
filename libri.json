@@ -1,0 +1,88 @@
+{
+ "books": [
+  {
+   "id": "weihnachten-am-klavier",
+   "title": "Weihnachten am Klavier",
+   "subtitle": "24 Weihnachtslieder und 8 bekannte Melodien in zwei Stufen",
+   "tag": "Kommentierte Ausgabe",
+   "lang": "de",
+   "show": [
+    "de"
+   ],
+   "cover": "https://piano.rc-digital.it/img/libri/weihnachten-am-klavier-3d.png",
+   "hardcover": "B0HSLPSB2M",
+   "paperback": "B0HSLD6NLP",
+   "kindle": "B0HSL7WKX4"
+  },
+  {
+   "id": "christmas-at-the-piano",
+   "title": "Christmas at the Piano",
+   "subtitle": "24 Christmas Carols and 8 Familiar Melodies in Two Levels",
+   "tag": "Annotated",
+   "lang": "en",
+   "show": null,
+   "cover": "https://piano.rc-digital.it/img/libri/christmas-at-the-piano-3d.png",
+   "hardcover": "B0HSL55GWT",
+   "paperback": "B0HSLHZRV7",
+   "kindle": "B0HSL6G1V9"
+  },
+  {
+   "id": "pianoforte-senza-tempo",
+   "title": "Pianoforte senza tempo",
+   "subtitle": "Antologia scelta da Bach a Joplin",
+   "tag": "Annotato",
+   "lang": "it",
+   "show": [
+    "it"
+   ],
+   "cover": "https://piano.rc-digital.it/img/libri/pianoforte-senza-tempo-3d.png",
+   "hardcover": "B0HSFPV69W",
+   "paperback": "B0HSG9BJMH",
+   "kindle": "B0HSFWFL3M"
+  },
+  {
+   "id": "timeless-piano",
+   "title": "Timeless Piano",
+   "subtitle": "A Selected Anthology from Bach to Joplin",
+   "tag": "Annotated",
+   "lang": "en",
+   "show": null,
+   "cover": "https://piano.rc-digital.it/img/libri/timeless-piano-3d.png",
+   "hardcover": "B0HSCYJVXV",
+   "paperback": "B0HSFYGTWW",
+   "kindle": "B0HSFD8JQT"
+  }
+ ],
+ "stores": [
+  "co.uk",
+  "de",
+  "fr",
+  "it",
+  "es",
+  "nl",
+  "pl",
+  "se",
+  "com.be",
+  "ie"
+ ],
+ "main": {
+  "it": "it",
+  "en": "co.uk",
+  "de": "de",
+  "fr": "fr",
+  "es": "es",
+  "pt": "es"
+ },
+ "pages": {
+  "it": "https://piano.rc-digital.it/it/libri.html",
+  "en": "https://piano.rc-digital.it/en/books.html",
+  "es": "https://piano.rc-digital.it/es/libros.html",
+  "fr": "https://piano.rc-digital.it/fr/livres.html",
+  "de": "https://piano.rc-digital.it/de/buecher.html",
+  "pt": "https://piano.rc-digital.it/pt/livros.html",
+  "ru": "https://piano.rc-digital.it/ru/books.html",
+  "ja": "https://piano.rc-digital.it/ja/books.html",
+  "zh": "https://piano.rc-digital.it/zh/books.html",
+  "ko": "https://piano.rc-digital.it/ko/books.html"
+ }
+}

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Piano Learning · TV</title>
+<link rel="icon" href="../img/icona.png">
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; background: #0d1626; color: #eef2f8; font: 17px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; display: flex; justify-content: center; }
+main { width: 100%; max-width: 520px; padding: 28px 18px 40px; }
+.brand { color: #6ee7a8; letter-spacing: .3em; font-weight: 800; font-size: 13px; margin: 0 0 10px; }
+h1 { font-size: 24px; line-height: 1.25; margin: 0 0 14px; }
+p { margin: 0 0 18px; color: #c4cfdf; }
+label { display: block; font-weight: 700; margin: 16px 0 6px; }
+.row { display: flex; gap: 8px; }
+input { flex: 1; min-width: 0; font: inherit; padding: 13px 12px; border-radius: 12px; border: 2px solid #3a4a63; background: #fff; color: #142338; }
+input:focus { outline: 3px solid #ffd166; outline-offset: 1px; }
+button { font: inherit; font-weight: 700; border: 0; border-radius: 12px; padding: 13px 16px; cursor: pointer; }
+.paste { background: #24324a; color: #eef2f8; }
+.send { width: 100%; margin-top: 18px; background: #6ee7a8; color: #0d1626; font-size: 19px; padding: 16px; }
+.send:disabled { opacity: .6; }
+#status { margin-top: 18px; font-weight: 700; min-height: 1.5em; }
+#status.ok { color: #6ee7a8; } #status.err { color: #ff8a80; }
+#codeRow.hidden { display: none; }
+</style>
+</head>
+<body>
+<main>
+<p class="brand">PIANO LEARNING</p>
+<h1 id="t0"></h1>
+<p id="t1"></p>
+<div id="codeRow"><label for="code" id="t9"></label><div class="row"><input id="code" maxlength="8" autocomplete="off" autocapitalize="characters" spellcheck="false"></div></div>
+<label for="link" id="t2"></label>
+<div class="row"><input id="link" type="url" inputmode="url" autocomplete="off" placeholder="https://youtu.be/…"><button class="paste" id="t3" type="button"></button></div>
+<button class="send" id="t4" type="button"></button>
+<div id="status" role="status"></div>
+</main>
+<script>
+const API = "https://pianolearning-link.rcrgare.workers.dev/link";
+const T = {"it": ["Aggiungi un video a Piano Learning sulla TV", "Su YouTube tocca Condividi → Copia link, poi incollalo qui.", "Link del video YouTube", "Incolla", "Invia alla TV", "Inviato! Tra qualche secondo il video compare sulla TV.", "Questo non è un link YouTube: copia il link del video e riprova.", "Codice scaduto: sulla TV riapri «Aggiungi video» e inquadra il nuovo codice.", "Nessuna connessione: riprova.", "Codice della TV"], "en": ["Add a video to Piano Learning on your TV", "On YouTube tap Share → Copy link, then paste it here.", "YouTube video link", "Paste", "Send to the TV", "Sent! The video will appear on your TV in a few seconds.", "That isn't a YouTube link: copy the video's link and try again.", "This code has expired: on the TV open «Add video» again and scan the new code.", "No connection: please try again.", "TV code"], "es": ["Añade un vídeo a Piano Learning en la TV", "En YouTube toca Compartir → Copiar enlace y pégalo aquí.", "Enlace del vídeo de YouTube", "Pegar", "Enviar a la TV", "¡Enviado! En unos segundos el vídeo aparecerá en la TV.", "Eso no es un enlace de YouTube: copia el enlace del vídeo e inténtalo de nuevo.", "El código ha caducado: en la TV abre de nuevo «Añadir vídeo» y escanea el nuevo código.", "Sin conexión: inténtalo de nuevo.", "Código de la TV"], "fr": ["Ajouter une vidéo à Piano Learning sur la TV", "Sur YouTube, touchez Partager → Copier le lien, puis collez-le ici.", "Lien de la vidéo YouTube", "Coller", "Envoyer à la TV", "Envoyé ! La vidéo apparaîtra sur la TV dans quelques secondes.", "Ce n'est pas un lien YouTube : copiez le lien de la vidéo et réessayez.", "Code expiré : sur la TV, rouvrez « Ajouter une vidéo » et scannez le nouveau code.", "Pas de connexion : réessayez.", "Code de la TV"], "de": ["Ein Video zu Piano Learning auf dem Fernseher hinzufügen", "Tippe in YouTube auf Teilen → Link kopieren und füge ihn hier ein.", "Link des YouTube-Videos", "Einfügen", "An den Fernseher senden", "Gesendet! In wenigen Sekunden erscheint das Video auf dem Fernseher.", "Das ist kein YouTube-Link: Kopiere den Link des Videos und versuche es erneut.", "Der Code ist abgelaufen: Öffne auf dem Fernseher erneut „Video hinzufügen“ und scanne den neuen Code.", "Keine Verbindung: Bitte erneut versuchen.", "Code des Fernsehers"], "pt": ["Adicione um vídeo ao Piano Learning na TV", "No YouTube toque em Compartilhar → Copiar link e cole aqui.", "Link do vídeo do YouTube", "Colar", "Enviar para a TV", "Enviado! Em alguns segundos o vídeo aparece na TV.", "Isso não é um link do YouTube: copie o link do vídeo e tente de novo.", "Código expirado: na TV abra de novo «Adicionar vídeo» e leia o novo código.", "Sem conexão: tente de novo.", "Código da TV"], "ru": ["Добавить видео в Piano Learning на телевизоре", "В YouTube нажмите «Поделиться» → «Копировать ссылку» и вставьте её сюда.", "Ссылка на видео YouTube", "Вставить", "Отправить на телевизор", "Отправлено! Через несколько секунд видео появится на телевизоре.", "Это не ссылка YouTube: скопируйте ссылку на видео и попробуйте снова.", "Код устарел: на телевизоре снова откройте «Добавить видео» и отсканируйте новый код.", "Нет соединения: попробуйте снова.", "Код телевизора"], "ja": ["テレビの Piano Learning に動画を追加", "YouTube で［共有］→［リンクをコピー］をタップし、ここに貼り付けてください。", "YouTube 動画のリンク", "貼り付け", "テレビに送信", "送信しました！数秒でテレビに動画が表示されます。", "YouTube のリンクではありません。動画のリンクをコピーしてもう一度お試しください。", "コードの有効期限が切れました。テレビで「動画を追加」を開き直し、新しいコードを読み取ってください。", "接続できません。もう一度お試しください。", "テレビのコード"], "zh": ["在电视上的 Piano Learning 中添加视频", "在 YouTube 中点按“分享”→“复制链接”，然后粘贴到这里。", "YouTube 视频链接", "粘贴", "发送到电视", "已发送！几秒钟后视频会出现在电视上。", "这不是 YouTube 链接：请复制视频链接后重试。", "代码已过期：请在电视上重新打开“添加视频”并扫描新代码。", "没有网络连接：请重试。", "电视代码"], "ko": ["TV의 Piano Learning에 동영상 추가", "YouTube에서 공유 → 링크 복사를 누른 뒤 여기에 붙여 넣으세요.", "YouTube 동영상 링크", "붙여넣기", "TV로 보내기", "보냈습니다! 몇 초 뒤 TV에 동영상이 나타납니다.", "YouTube 링크가 아닙니다. 동영상 링크를 복사해 다시 시도하세요.", "코드가 만료되었습니다. TV에서 「동영상 추가」를 다시 열고 새 코드를 스캔하세요.", "연결되지 않았습니다. 다시 시도하세요.", "TV 코드"], "tr": ["TV'deki Piano Learning'e video ekle", "YouTube'da Paylaş → Bağlantıyı kopyala'ya dokunun, sonra buraya yapıştırın.", "YouTube video bağlantısı", "Yapıştır", "TV'ye gönder", "Gönderildi! Birkaç saniye içinde video TV'de görünecek.", "Bu bir YouTube bağlantısı değil: videonun bağlantısını kopyalayıp tekrar deneyin.", "Kodun süresi doldu: TV'de «Video ekle»yi yeniden açın ve yeni kodu tarayın.", "Bağlantı yok: tekrar deneyin.", "TV kodu"], "bn": ["টিভির Piano Learning-এ একটি ভিডিও যোগ করুন", "YouTube-এ শেয়ার → লিংক কপি করুন চাপুন, তারপর এখানে পেস্ট করুন।", "YouTube ভিডিওর লিংক", "পেস্ট", "টিভিতে পাঠান", "পাঠানো হয়েছে! কয়েক সেকেন্ডের মধ্যে ভিডিওটি টিভিতে দেখা যাবে।", "এটি YouTube লিংক নয়: ভিডিওর লিংক কপি করে আবার চেষ্টা করুন।", "কোডের মেয়াদ শেষ: টিভিতে আবার «ভিডিও যোগ করুন» খুলে নতুন কোড স্ক্যান করুন।", "সংযোগ নেই: আবার চেষ্টা করুন।", "টিভির কোড"], "sw": ["Ongeza video kwenye Piano Learning ya TV", "Kwenye YouTube gusa Shiriki → Nakili kiungo, kisha ukibandike hapa.", "Kiungo cha video ya YouTube", "Bandika", "Tuma kwa TV", "Imetumwa! Baada ya sekunde chache video itaonekana kwenye TV.", "Hiki si kiungo cha YouTube: nakili kiungo cha video ujaribu tena.", "Msimbo umeisha muda: kwenye TV fungua tena «Ongeza video» na uchanganue msimbo mpya.", "Hakuna muunganisho: jaribu tena.", "Msimbo wa TV"], "ur": ["ٹی وی پر Piano Learning میں ویڈیو شامل کریں", "YouTube میں شیئر → لنک کاپی کریں پر ٹیپ کریں، پھر یہاں پیسٹ کریں۔", "YouTube ویڈیو کا لنک", "پیسٹ", "ٹی وی کو بھیجیں", "بھیج دیا! چند سیکنڈ میں ویڈیو ٹی وی پر نظر آئے گی۔", "یہ YouTube لنک نہیں ہے: ویڈیو کا لنک کاپی کر کے دوبارہ کوشش کریں۔", "کوڈ کی مدت ختم ہو گئی: ٹی وی پر «ویڈیو شامل کریں» دوبارہ کھولیں اور نیا کوڈ اسکین کریں۔", "کنکشن نہیں: دوبارہ کوشش کریں۔", "ٹی وی کا کوڈ"], "hi": ["टीवी पर Piano Learning में वीडियो जोड़ें", "YouTube में शेयर → लिंक कॉपी करें दबाएँ, फिर यहाँ पेस्ट करें।", "YouTube वीडियो का लिंक", "पेस्ट", "टीवी पर भेजें", "भेज दिया! कुछ सेकंड में वीडियो टीवी पर दिखेगा।", "यह YouTube लिंक नहीं है: वीडियो का लिंक कॉपी करके फिर कोशिश करें।", "कोड की समय-सीमा खत्म: टीवी पर «वीडियो जोड़ें» फिर से खोलें और नया कोड स्कैन करें।", "कनेक्शन नहीं: फिर कोशिश करें।", "टीवी का कोड"], "id": ["Tambahkan video ke Piano Learning di TV", "Di YouTube ketuk Bagikan → Salin link, lalu tempel di sini.", "Link video YouTube", "Tempel", "Kirim ke TV", "Terkirim! Dalam beberapa detik video muncul di TV.", "Itu bukan link YouTube: salin link video lalu coba lagi.", "Kode kedaluwarsa: di TV buka lagi «Tambah video» dan pindai kode baru.", "Tidak ada koneksi: coba lagi.", "Kode TV"], "vi": ["Thêm video vào Piano Learning trên TV", "Trên YouTube, chạm Chia sẻ → Sao chép đường liên kết, rồi dán vào đây.", "Liên kết video YouTube", "Dán", "Gửi tới TV", "Đã gửi! Vài giây nữa video sẽ hiện trên TV.", "Đây không phải liên kết YouTube: hãy sao chép liên kết video và thử lại.", "Mã đã hết hạn: trên TV hãy mở lại «Thêm video» và quét mã mới.", "Không có kết nối: hãy thử lại.", "Mã của TV"], "ar": ["أضف فيديو إلى Piano Learning على التلفزيون", "في YouTube اضغط مشاركة ← نسخ الرابط، ثم الصقه هنا.", "رابط فيديو YouTube", "لصق", "إرسال إلى التلفزيون", "تم الإرسال! سيظهر الفيديو على التلفزيون خلال ثوانٍ.", "هذا ليس رابط YouTube: انسخ رابط الفيديو وحاول مرة أخرى.", "انتهت صلاحية الرمز: افتح «إضافة فيديو» مرة أخرى على التلفزيون وامسح الرمز الجديد.", "لا يوجد اتصال: حاول مرة أخرى.", "رمز التلفزيون"], "th": ["เพิ่มวิดีโอใน Piano Learning บนทีวี", "ใน YouTube แตะ แชร์ → คัดลอกลิงก์ แล้ววางที่นี่", "ลิงก์วิดีโอ YouTube", "วาง", "ส่งไปที่ทีวี", "ส่งแล้ว! อีกไม่กี่วินาทีวิดีโอจะปรากฏบนทีวี", "นี่ไม่ใช่ลิงก์ YouTube: คัดลอกลิงก์ของวิดีโอแล้วลองอีกครั้ง", "รหัสหมดอายุ: บนทีวีให้เปิด «เพิ่มวิดีโอ» อีกครั้งแล้วสแกนรหัสใหม่", "ไม่มีการเชื่อมต่อ: ลองอีกครั้ง", "รหัสทีวี"], "fil": ["Magdagdag ng video sa Piano Learning sa TV", "Sa YouTube, i-tap ang Ibahagi → Kopyahin ang link, saka i-paste dito.", "Link ng video sa YouTube", "I-paste", "Ipadala sa TV", "Naipadala! Lalabas ang video sa TV sa loob ng ilang segundo.", "Hindi ito link ng YouTube: kopyahin ang link ng video at subukang muli.", "Nag-expire na ang code: sa TV, buksan muli ang «Magdagdag ng video» at i-scan ang bagong code.", "Walang koneksyon: subukang muli.", "Code ng TV"]};
+const RTL = ["ar", "ur"];
+const q = new URLSearchParams(location.search);
+const wanted = (q.get("l") || navigator.language || "en").toLowerCase();
+const lang = T[wanted] ? wanted : T[wanted.split("-")[0]] ? wanted.split("-")[0] : wanted.startsWith("tl") ? "fil" : "en";
+const t = T[lang];
+document.documentElement.lang = lang;
+if (RTL.includes(lang)) document.documentElement.dir = "rtl";
+for (let i = 0; i < 10; i++) { const el = document.getElementById("t" + i); if (el) el.textContent = t[i]; }
+document.title = t[0];
+const code = document.getElementById("code"), link = document.getElementById("link"), status = document.getElementById("status"), send = document.getElementById("t4");
+const given = (q.get("c") || "").toUpperCase();
+if (/^[A-HJ-NP-Z2-9]{8}$/.test(given)) { code.value = given; document.getElementById("codeRow").classList.add("hidden"); }
+const show = (text, ok) => { status.textContent = text; status.className = ok ? "ok" : "err"; };
+document.getElementById("t3").addEventListener("click", async () => {
+  try { link.value = (await navigator.clipboard.readText()).trim(); } catch { link.focus(); }
+});
+send.addEventListener("click", async () => {
+  send.disabled = true; status.textContent = "";
+  try {
+    const r = await fetch(API, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ c: code.value.trim().toUpperCase(), u: link.value }) });
+    const j = await r.json().catch(() => ({}));
+    if (j.ok) { show(t[5], true); link.value = ""; }
+    else show(j.error === "code" ? t[7] : t[6], false);
+  } catch { show(t[8], false); }
+  send.disabled = false;
+});
+</script>
+</body>
+</html>
