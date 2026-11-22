@@ -819,3 +819,9 @@ body:has(.buybar) footer { padding-bottom: 104px; }
 @media (max-width: 900px) { .feat4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 /* menu del telefono: un pixel in meno tra le voci, così anche in inglese stanno tutte e quattro */
 @media (max-width: 480px) { .tnav { gap: 4px; } }
+
+/* lingua dell'edizione, in piccolo sotto il titolo di ogni libro */
+.ed-lang { margin: 6px 0 0 !important; font-size: 12px !important; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--gold-d, #8c6a2a) !important; }
+.bdet .ed-lang { color: var(--gold) !important; }
+.bcard i.ed-lang { display: block; font-style: normal; color: var(--gold) !important; margin-top: 4px !important; }
+@media (max-width: 760px) { .ed-lang { font-size: 10.5px !important; letter-spacing: .08em; } }
