@@ -1,0 +1,342 @@
+:root {
+  color-scheme: dark;
+  --paper: #0a1020;
+  --deep: #080b1a;
+  --surface: #111b30;
+  --raised: #192942;
+  --white: #f2f6ff;
+  --ink: #edf3ff;
+  --muted: #acbed9;
+  --line: #30425e;
+  --dark: #203554;
+  --dark-muted: #bacbe3;
+  --brass: #83baff;
+  --brass-hover: #a8cfff;
+  --brown: #9ac6ff;
+  --focus: #9ac6ff;
+  --right: #ff6a54;
+  --left: #4ca6ff;
+  --display: var(--sans);
+  --radius: .85rem;
+}
+
+h1, h2 { font-weight: 700; letter-spacing: -.044em; }
+h1 { font-size: clamp(2.55rem, 5.3vw, 4.5rem); line-height: .99; }
+h2 { font-size: clamp(1.8rem, 3.3vw, 2.85rem); line-height: 1.1; }
+.top { background: var(--deep); }
+.brand img { outline: 1px solid #647892; outline-offset: 1px; }
+.tnav a { border: 1px solid transparent; border-radius: .45rem; }
+.tnav a:hover { color: #c3ddff; text-decoration: none; }
+.tnav a[aria-current] {
+  border-color: #567cab;
+  color: var(--white);
+  background: #2b4b73;
+  text-decoration: none;
+}
+.langs > div { background: var(--surface); box-shadow: 0 12px 32px #03061190; }
+.langs a:hover, .langs a[aria-current] { background: var(--raised); }
+.skip:focus { background: var(--raised); }
+
+.tnav a.books { padding-inline: .72rem; }
+.tnav a.books:not([aria-current]) {
+  border-color: #e7942d;
+  color: #271705;
+  background: #ffba59;
+  text-decoration: none;
+}
+.tnav a.books:not([aria-current]):hover { background: #ffce85; }
+@media (prefers-reduced-motion: no-preference) {
+  .tnav a.books:not([aria-current]) { animation: books-menu-pulse 2.5s ease-in-out infinite; }
+  .tnav a.books:is(:hover, :focus-visible) { animation-play-state: paused; }
+}
+@keyframes books-menu-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 #ffb14000; }
+  50% { box-shadow: 0 0 0 4px #ffb14065; }
+}
+
+.btn { border-color: #405c83; }
+.btn:hover { background: #2d4870; }
+.btn.gold { border-color: transparent; color: #09182c; }
+.btn.gold:hover { background: var(--brass-hover); }
+.btn.outline, .btn.ghost, .btn.line, .btn.quiet { border-color: #486283; }
+.btn.outline:hover, .btn.ghost:hover, .btn.line:hover, .btn.quiet:hover { background: #213754; }
+
+.home-hero {
+  background: radial-gradient(ellipse at 80% 0%, #192d50 0%, #0a1020 67%);
+  border-bottom: 1px solid #22334e;
+}
+.hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, .96fr) minmax(0, 1.04fr);
+  gap: clamp(1.25rem, 4vw, 3.35rem);
+  min-height: 0;
+  align-items: center;
+  padding-block: clamp(1.5rem, 3.7vw, 2.65rem);
+}
+.hero-copy { width: auto; padding: 0; }
+.hero-copy h1 {
+  font-size: clamp(2.75rem, 4.8vw, 4.5rem);
+  line-height: .99;
+  letter-spacing: -.057em;
+}
+.hero-copy h1 em { color: var(--brass); font-style: normal; text-wrap: balance; }
+.hero-copy p { max-width: 43ch; margin-block: .96rem 1.12rem; line-height: 1.43; text-wrap: pretty; }
+.hero-buttons { align-items: stretch; }
+.hero-buttons .btn { min-height: 49px; }
+.hero-books { justify-content: start; gap: .56rem; background: #172840; text-align: start; }
+.hero-books i { display: grid; place-items: center; flex: none; color: var(--brass); }
+.hero-books svg { width: 21px; height: 21px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linejoin: round; }
+.hero-books b, .hero-books small { display: block; }
+.hero-books small { margin-top: .2rem; font-size: .77rem; font-weight: 500; }
+.hero-app-link { display: inline-block; padding-block: .22rem; margin-top: .5rem; color: #b8d6ff; font-size: .94rem; font-weight: 650; }
+
+.hero-tutorial {
+  display: block;
+  min-width: 0;
+  border: 1px solid #3d577e;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--surface);
+  color: var(--ink);
+  text-decoration: none;
+  box-shadow: 0 .8rem 2.1rem #05081260;
+}
+.hero-tutorial:hover { border-color: var(--brass); }
+.hero-tutorial-media { position: relative; aspect-ratio: 16 / 9; background: var(--deep); }
+.hero-tutorial-media img { width: 100%; height: 100%; object-fit: cover; }
+.hero-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  place-items: center;
+  width: clamp(42px, 6vw, 62px);
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  border: 1px solid #a1c9fb;
+  border-radius: 50%;
+  background: #0a1429de;
+  color: #ddebff;
+}
+.hero-play::after {
+  content: '';
+  margin-left: .14rem;
+  border-block: .37rem solid transparent;
+  border-left: .6rem solid currentColor;
+}
+.hero-tutorial:hover .hero-play { background: var(--brass); color: #0a1429; }
+.hero-tutorial-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .45rem .8rem;
+  padding: .58rem .85rem;
+  border-top: 1px solid #30445f;
+}
+.hero-tutorial-caption b { line-height: 1.25; }
+.hero-tutorial-caption span { color: var(--brass); font-size: .9rem; font-weight: 650; }
+
+.home-content { padding-top: clamp(1rem, 2.3vw, 1.65rem); }
+.home-content > * + * { margin-top: clamp(1.65rem, 4vw, 3.4rem); }
+.home-book.vfeat {
+  grid-template-columns: minmax(105px, .55fr) minmax(0, 1.45fr);
+  gap: clamp(.75rem, 3vw, 1.85rem);
+  padding: clamp(.8rem, 1.8vw, 1.35rem);
+  background: linear-gradient(115deg, #192a47, #111b30);
+}
+.home-book .vf-book {
+  display: grid;
+  place-items: center;
+  align-self: stretch;
+  padding: .45rem;
+  border-radius: .65rem;
+  background: radial-gradient(ellipse at 49% 40%, #314f76, #111d34 74%);
+}
+.home-book .book3d { width: min(100%, 145px); }
+.home-book .vf-t > * + * { margin-top: .32rem; }
+.home-book .vf-t h2 { font-size: clamp(1.75rem, 3.23vw, 2.65rem); }
+.home-book .vf-t .btn { min-height: 42px; }
+.home-book blockquote { font: italic 1.04rem/1.4 var(--sans); color: #c4d4eb; }
+
+.home-search input, .find input { background: var(--deep); }
+.home-search input::placeholder, .find input::placeholder { color: #adbdd4; }
+.home-search button:hover, .shortcut span { background: var(--raised); }
+.featured-caption h3 { font: 700 clamp(1.15rem, 2vw, 1.55rem)/1.12 var(--sans); letter-spacing: -.018em; }
+.featured-media, .tiles img, .video { background: var(--deep); }
+.play-mark, .play-button { background: #0c1528e8; }
+.home-app {
+  grid-template-columns: 4.1rem minmax(0, 1fr);
+  gap: .85rem clamp(.85rem, 1.8vw, 1.25rem);
+  padding: clamp(.85rem, 1.8vw, 1.3rem);
+  background: #152542;
+  border: 1px solid var(--line);
+}
+.home-app .app-mark img { width: 4.1rem; border-radius: .8rem; }
+.home-app .eyebrow { margin-bottom: .17rem; font-size: .75rem; }
+.home-app h2 { font-size: clamp(1.35rem, 2.65vw, 1.9rem); }
+.home-app p:not(.eyebrow) { margin-block: .32rem 0; font-size: .95rem; }
+.home-app .btns { gap: .45rem; margin-top: .55rem; }
+.home-app .btn { min-height: 42px; padding-inline: .85rem; }
+
+@media (min-width: 920px) {
+  .home-app > div:last-child {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    column-gap: 1.15rem;
+    align-items: center;
+  }
+  .home-app :is(p, h2) { grid-column: 1; }
+  .home-app .btns { grid-column: 2; grid-row: 1 / span 3; margin-top: 0; }
+}
+
+.finder, .pills button, .featured-card, .tiles a, .ccards a, .related a,
+.lesson-section, .lesson-sidebar .card, .cgrid .card, .pbox, .notes span,
+.vtile, .feat4 > div, .sample, .how li, .bcard, .bdet, #score-view {
+  background: var(--surface);
+}
+.featured-card:hover, .tiles a:hover, .ccards a:hover, .related a:hover,
+.sample:hover, .bcard:hover { border-color: #698ec1; }
+.pills button[aria-pressed="true"] { border-color: var(--brass); background: var(--brass); color: #09182c; }
+.pills button:hover:not([aria-pressed="true"]) { background: var(--raised); }
+.lv { background: #253853; color: #deebfc; }
+.lv1 { background: #1b383f; color: #b6e5d9; }
+.lv2 { background: #213856; color: #bbd9ff; }
+.lv3 { background: #422735; color: #ffbdba; }
+
+.piece-stage { background: #111d34; border: 1px solid var(--line); }
+.piece-intro .crumbs, .legend { color: #b9cae2; }
+.piece-intro .author, .youtube-link { color: var(--brass); }
+.resource-links a { border-color: #506b90; color: #d7e8ff; }
+.video-launch::after { background: #050a1723; }
+.video-launch:hover .play-button { color: #09182c; }
+.notes .long { background: #203957; border-color: #6fa4e5; }
+.cta, .chead, .pfeat, .vfeat, .bk-pdf { background: var(--raised); }
+.cta { border: 1px solid var(--line); }
+.ccards .ctext b, .bcard > b { font: 700 1.2rem/1.14 var(--sans); }
+.vtile img, .spread img { background: var(--deep); }
+.off, .tag, .vt-n { background: #243e60; color: #d9e9ff; }
+.vtile .vt-new { background: #492f3b; color: #ffcec8; }
+footer { background: var(--deep); }
+
+@media (max-width: 760px) {
+  .tnav a.books { padding-inline: .42rem; }
+  .hero-layout {
+    width: min(var(--width), calc(100% - var(--gutter) - var(--gutter)));
+    grid-template-columns: minmax(0, 1fr);
+    gap: .9rem;
+    padding-block: 1.35rem 1.15rem;
+  }
+  .hero-copy h1 { font-size: clamp(2.5rem, 9vw, 4rem); }
+  .hero-copy p { margin-block: .62rem .72rem; }
+  .hero-app-link { margin-top: .36rem; }
+  .hero-tutorial { max-width: 34rem; }
+  .hero-tutorial-media { max-height: 19rem; }
+  .buybar.on { background: var(--surface); box-shadow: 0 -5px 22px #0005; }
+}
+
+@media (max-width: 510px) {
+  .hero-buttons { display: grid; grid-template-columns: minmax(0, .82fr) minmax(0, 1.18fr); gap: .4rem; }
+  .hero-buttons .btn { min-height: 46px; padding-inline: .55rem; }
+  .hero-books { gap: .4rem; }
+  .hero-books svg { width: 17px; height: 17px; }
+  .hero-books small { font-size: .73rem; }
+  .hero-tutorial-caption { align-items: start; padding-inline: .65rem; }
+  .hero-tutorial-caption span { font-size: .8rem; }
+  .home-book.vfeat { grid-template-columns: minmax(69px, .42fr) minmax(0, 1fr); }
+  .home-book .vf-book { align-self: center; padding: .35rem; }
+  .home-book .book3d { width: min(100%, 110px); }
+  .home-book .vf-t h2 { font-size: 1.35rem; }
+  .home-book .vf-t .btn { padding-inline: .58rem; font-size: .83rem; }
+  .home-book blockquote { display: none; }
+  .home-app { grid-template-columns: 2.7rem minmax(0, 1fr); align-items: start; }
+  .home-app .app-mark img { width: 2.7rem; }
+  .home-app .btn { padding-inline: .6rem; font-size: .85rem; }
+}
+
+/* Adattamenti al sito (26/11/2026). Il titolo della pagina brano resta quello completo, con le parole cercate
+   su Google («Per Elisa (Für Elise) di Beethoven: tutorial pianoforte e spartito gratis»): più piccolo del titolo breve. */
+.page-piece .piece-intro h1 {
+  font-size: clamp(1.85rem, 3.05vw, 2.75rem);
+  line-height: 1.07;
+  letter-spacing: -.032em;
+  text-wrap: balance;
+}
+@media (max-width: 760px) {
+  .page-piece .piece-intro h1 { font-size: clamp(1.6rem, 6.6vw, 2.1rem); }
+}
+
+/* Menu del telefono: le voci vanno a capo solo tra una parola e l'altra («Composer s» spezzato in inglese). */
+@media (max-width: 760px) {
+  .tnav { gap: .25rem; }
+  .tnav a { min-width: min-content; overflow-wrap: normal; word-break: normal; hyphens: none; font-size: clamp(.74rem, 3.55vw, .86rem); }
+}
+
+/* Pagina «Libri»: titolo, sottotitolo, edizione e formati delle schede su righe separate;
+   didascalie delle due pagine d'esempio una sotto ciascuna pagina. */
+.bcard > span { display: grid; gap: .18rem; }
+.bcard > span > b { color: var(--ink); font: 700 1.08rem/1.2 var(--sans); }
+.bcard > span > em { color: var(--ink); }
+.bcard > span > i { font-style: normal; font-size: .82rem; }
+.spread-cap { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .65rem; }
+
+/* Pulsanti dei negozi accanto a «Piano Learning» (26/11/2026): scuri come i badge degli store,
+   triangolo colorato di Google Play e sorriso arancione di Amazon. Sostituiscono «Scopri l'app». */
+.brand-row { display: flex; align-items: center; gap: clamp(.6rem, 1.4vw, 1rem); min-width: 0; }
+.stores { display: flex; flex-wrap: nowrap; flex: none; align-items: center; gap: .4rem; }
+.store {
+  display: inline-flex;
+  align-items: center;
+  gap: .42rem;
+  min-height: 38px;
+  padding: .3rem .7rem .3rem .55rem;
+  border: 1px solid #5d6b80;
+  border-radius: .5rem;
+  background: #000;
+  color: #fff;
+  font-size: .84rem;
+  font-weight: 650;
+  letter-spacing: -.01em;
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.store svg { width: 19px; height: 19px; flex: none; }
+.store-amazon { background: #131921; border-color: #5f6b7a; }
+.store-amazon span { font-weight: 700; letter-spacing: -.02em; }
+.store:hover { border-color: #fff; text-decoration: none; }
+.store-play:hover { background: #1a1a1a; }
+.store-amazon:hover { background: #232f3e; }
+.store:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.langs .lang-code { display: none; }
+
+/* schermi medi: il menu va su una seconda riga, come sul telefono */
+@media (max-width: 1180px) and (min-width: 761px) {
+  .top > .wrap { grid-template-columns: minmax(0, 1fr) auto; row-gap: .1rem; padding-top: .4rem; }
+  .top .tnav { grid-column: 1 / -1; grid-row: 2; justify-content: flex-start; padding-bottom: .35rem; }
+  .head-actions { grid-column: 2; grid-row: 1; }
+}
+
+/* telefono: «Piano Learning» su due righe, pulsanti compatti, lingua con la sigla (IT, EN…) */
+@media (max-width: 760px) {
+  .brand-row { gap: .4rem; }
+  .brand { gap: .4rem; }
+  .brand img { width: 30px; height: 30px; }
+  .brand span { white-space: normal; max-width: 4.6em; font-size: .92rem; line-height: 1.02; }
+  .stores { gap: .3rem; }
+  .store { min-height: 34px; gap: .26rem; padding: .25rem .42rem .25rem .34rem; font-size: .72rem; }
+  .store svg { width: 15px; height: 15px; }
+  .langs .lang-name { display: none; }
+  .langs .lang-code { display: inline; }
+  .langs summary { padding-inline: .35rem; font-size: .82rem; }
+}
+/* telefoni da 353 a 380 px (molti Android sono larghi 360): tutto un filo più stretto */
+@media (max-width: 380px) {
+  .top > .wrap { column-gap: .25rem; }
+  .store { gap: .22rem; padding: .25rem .34rem .25rem .28rem; font-size: .69rem; }
+  .langs summary { gap: .28rem; padding-inline: .2rem; }
+}
+/* telefoni stretti: solo le icone dei negozi (il nome resta per i lettori di schermo) */
+@media (max-width: 352px) {
+  .store span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  .store { padding-inline: .45rem; }
+}
