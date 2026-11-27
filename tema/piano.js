@@ -139,3 +139,59 @@
     if (footer) observer.observe(footer);
   }
 })();
+
+// Libri su Amazon (27/11/2026): i link con data-az (hardcover, paperback, kindle) vanno sul negozio dove il
+// visitatore può comprare, secondo il paese (fuso orario, poi regione della lingua del dispositivo). Paese
+// sconosciuto: resta il negozio della lingua della pagina. Stessa tabella dell'app: lib/amazonStores.ts.
+// Per provare: aggiungere ?paese=US (o ES, JP, MX...) all'indirizzo della pagina.
+(() => {
+  try {
+    const Z = {};
+    const add = (c, zs) => zs.split(' ').forEach(z => { Z[z] = c; });
+    add('US', 'America/New_York America/Chicago America/Denver America/Los_Angeles America/Phoenix America/Anchorage America/Detroit America/Boise America/Juneau America/Sitka America/Nome America/Adak America/Metlakatla America/Yakutat America/Menominee Pacific/Honolulu US/Eastern US/Central US/Mountain US/Pacific');
+    add('CA', 'America/Toronto America/Vancouver America/Edmonton America/Winnipeg America/Halifax America/St_Johns America/Regina America/Montreal America/Moncton America/Glace_Bay America/Goose_Bay America/Whitehorse America/Dawson America/Yellowknife America/Iqaluit America/Rankin_Inlet America/Swift_Current America/Cambridge_Bay America/Inuvik America/Atikokan America/Blanc-Sablon America/Creston America/Dawson_Creek America/Fort_Nelson America/Resolute America/Thunder_Bay');
+    add('MX', 'America/Mexico_City America/Monterrey America/Cancun America/Merida America/Tijuana America/Chihuahua America/Hermosillo America/Mazatlan America/Bahia_Banderas America/Matamoros America/Ojinaga America/Ciudad_Juarez');
+    add('BR', 'America/Sao_Paulo America/Fortaleza America/Recife America/Bahia America/Belem America/Manaus America/Cuiaba America/Campo_Grande America/Porto_Velho America/Boa_Vista America/Maceio America/Araguaina America/Santarem America/Rio_Branco America/Noronha');
+    add('GB', 'Europe/London Europe/Belfast Europe/Guernsey Europe/Jersey Europe/Isle_of_Man Europe/Gibraltar');
+    add('IE', 'Europe/Dublin'); add('DE', 'Europe/Berlin Europe/Busingen'); add('AT', 'Europe/Vienna'); add('CH', 'Europe/Zurich');
+    add('LI', 'Europe/Vaduz'); add('LU', 'Europe/Luxembourg'); add('FR', 'Europe/Paris'); add('MC', 'Europe/Monaco');
+    add('BE', 'Europe/Brussels'); add('NL', 'Europe/Amsterdam'); add('ES', 'Europe/Madrid Atlantic/Canary Africa/Ceuta');
+    add('PT', 'Europe/Lisbon Atlantic/Madeira Atlantic/Azores'); add('AD', 'Europe/Andorra'); add('IT', 'Europe/Rome');
+    add('SM', 'Europe/San_Marino'); add('VA', 'Europe/Vatican'); add('MT', 'Europe/Malta'); add('PL', 'Europe/Warsaw');
+    add('SE', 'Europe/Stockholm'); add('DK', 'Europe/Copenhagen'); add('NO', 'Europe/Oslo'); add('FI', 'Europe/Helsinki');
+    add('CZ', 'Europe/Prague'); add('SK', 'Europe/Bratislava'); add('HU', 'Europe/Budapest'); add('SI', 'Europe/Ljubljana');
+    add('HR', 'Europe/Zagreb'); add('RO', 'Europe/Bucharest'); add('BG', 'Europe/Sofia'); add('GR', 'Europe/Athens');
+    add('EE', 'Europe/Tallinn'); add('LV', 'Europe/Riga'); add('LT', 'Europe/Vilnius'); add('CY', 'Asia/Nicosia Europe/Nicosia Asia/Famagusta');
+    add('IS', 'Atlantic/Reykjavik'); add('JP', 'Asia/Tokyo'); add('IN', 'Asia/Kolkata Asia/Calcutta'); add('NZ', 'Pacific/Auckland Pacific/Chatham');
+    const PRINT = { US: 'com', CA: 'ca', GB: 'co.uk', IE: 'ie', DE: 'de', AT: 'de', CH: 'de', LI: 'de', LU: 'de', FR: 'fr', MC: 'fr',
+      BE: 'com.be', NL: 'nl', ES: 'es', PT: 'es', AD: 'es', IT: 'it', SM: 'it', VA: 'it', MT: 'it', PL: 'pl', SE: 'se',
+      DK: 'de', NO: 'de', FI: 'de', CZ: 'de', SK: 'de', HU: 'de', SI: 'de', HR: 'de', RO: 'de', BG: 'de', GR: 'de',
+      EE: 'de', LV: 'de', LT: 'de', CY: 'de', IS: 'de', JP: 'co.jp', AU: 'com.au', NZ: 'com.au' };
+    const KINDLE = { US: 'com', CA: 'ca', GB: 'co.uk', IE: 'co.uk', DE: 'de', AT: 'de', CH: 'de', LI: 'de', LU: 'de', FR: 'fr', MC: 'fr',
+      BE: 'fr', NL: 'nl', ES: 'es', IT: 'it', SM: 'it', VA: 'it', JP: 'co.jp', AU: 'com.au', MX: 'com.mx', BR: 'com.br', IN: 'in' };
+    const q = /[?&]paese=([A-Za-z]{2})/.exec(location.search);
+    let c = q ? q[1].toUpperCase() : '';
+    if (!c) {
+      let tz = '';
+      try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch (e) { /* vecchi browser */ }
+      c = Z[tz] || (/^America\/(Indiana|Kentucky|North_Dakota)\//.test(tz) ? 'US' : /^Australia\//.test(tz) ? 'AU' : '');
+    }
+    if (!c) {
+      for (const l of navigator.languages || [navigator.language || '']) {
+        const m = /[-_]([A-Za-z]{2})$/.exec(l || '');
+        if (m) { c = m[1].toUpperCase(); break; }
+      }
+    }
+    if (!c) return;
+    document.querySelectorAll('a[data-az]').forEach(a => {
+      const m = /amazon\.([a-z.]+)\/dp\/([A-Z0-9]{10})/.exec(a.href);
+      if (!m) return;
+      const f = a.getAttribute('data-az');
+      let st = f === 'kindle' ? (KINDLE[c] || 'com') : (PRINT[c] || 'com');
+      if (f === 'hardcover' && (st === 'co.jp' || st === 'com.au')) st = 'com';
+      if (st === m[1]) return;
+      a.href = `https://www.amazon.${st}/dp/${m[2]}`;
+      if (a.textContent.includes(`Amazon.${m[1]}`)) a.textContent = a.textContent.replace(`Amazon.${m[1]}`, `Amazon.${st}`);
+    });
+  } catch (e) { /* i link restano quelli della lingua della pagina */ }
+})();

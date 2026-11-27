@@ -54,6 +54,7 @@
   }
  ],
  "stores": [
+  "com",
   "co.uk",
   "de",
   "fr",
@@ -63,7 +64,8 @@
   "pl",
   "se",
   "com.be",
-  "ie"
+  "ie",
+  "ca"
  ],
  "main": {
   "it": "it",
