@@ -182,6 +182,12 @@
         if (m) { c = m[1].toUpperCase(); break; }
       }
     }
+    // Fuso di un paese senza negozio Amazon suo (Vietnam, Thailandia...) e lingua senza regione: Amazon.com.
+    if (!c) {
+      let tz = '';
+      try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch (e) { /* vecchi browser */ }
+      if (/^(Africa|America|Antarctica|Asia|Atlantic|Australia|Europe|Indian|Pacific)\//.test(tz)) c = 'ZZ';
+    }
     if (!c) return;
     document.querySelectorAll('a[data-az]').forEach(a => {
       const m = /amazon\.([a-z.]+)\/dp\/([A-Z0-9]{10})/.exec(a.href);
