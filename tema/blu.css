@@ -340,3 +340,16 @@ footer { background: var(--deep); }
   .store span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
   .store { padding-inline: .45rem; }
 }
+
+/* 28/11 (Fiorenzo): on phones the video picture of «Inizia da un brano» covered the
+   title (its 16:9 box took its width from the card's height), and «Compositori»
+   broke in the middle of the word. Picture on the left at a fixed share, the
+   text keeps the rest; the shortcuts put the icon above the word. */
+@media (max-width: 510px) {
+  .featured-card { grid-template-columns: minmax(0, 44%) minmax(0, 1fr); }
+  .featured-media { height: auto; inline-size: 100%; aspect-ratio: 16 / 9; align-self: center; min-width: 0; }
+  .featured-caption { min-width: 0; }
+  .featured-caption h3 { overflow-wrap: break-word; }
+  .shortcut { flex-direction: column; align-items: flex-start; gap: .35rem; }
+  .shortcut b { overflow-wrap: normal; word-break: normal; }
+}
